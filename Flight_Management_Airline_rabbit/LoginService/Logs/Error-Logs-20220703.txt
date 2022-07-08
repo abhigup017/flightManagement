@@ -1,0 +1,3 @@
+2022-07-03T19:16:14.1055341+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-03T19:16:14.1188937+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-03T19:16:14.1238152+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\FlightManagement\LoginService" (b5d60022)

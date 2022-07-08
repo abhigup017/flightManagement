@@ -1,0 +1,49 @@
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\obj\Debug\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\FlightManagement\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\obj\Debug\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight management Unit test\Common\obj\Debug\netcoreapp3.1\Common.csproj.AssemblyReference.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\obj\Debug\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline\Common\obj\Debug\netcoreapp3.1\Common.csproj.AssemblyReference.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\obj\Debug\netcoreapp3.1\Common.csproj.AssemblyReference.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\obj\Debug\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_r\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\bin\Debug\netcoreapp3.1\Common.deps.json
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\bin\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\bin\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\obj\Debug\netcoreapp3.1\Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfoInputs.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\obj\Debug\netcoreapp3.1\Common.AssemblyInfo.cs
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\obj\Debug\netcoreapp3.1\Common.csproj.CoreCompileInputs.cache
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\obj\Debug\netcoreapp3.1\Common.dll
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\obj\Debug\netcoreapp3.1\Common.pdb
+C:\Users\cogdotnet929\source\repos\Flight_Management_Airline_rabbit\Common\obj\Debug\netcoreapp3.1\Common.csproj.AssemblyReference.cache

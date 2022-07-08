@@ -1,0 +1,5 @@
+2022-07-03T19:16:26.9570716+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-03T19:16:26.9748450+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-03T19:16:26.9795390+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\FlightManagement\TicketService" (b5d60022)
+2022-07-03T19:18:38.5176634+05:30 8000004e-0001-f300-b63f-84710c7967bb [INF] PNR Number entered is Invalid!Stack Trace:   at TicketService.Service.TicketManagementRepository.GetTicketDetailsFromPNR(String PNRNumber) in C:\Users\cogdotnet929\source\repos\FlightManagement\TicketService\Service\TicketManagementRepository.cs:line 75
+   at TicketService.Controllers.TicketController.GetTicketDetailsFromPNR(String pnr) in C:\Users\cogdotnet929\source\repos\FlightManagement\TicketService\Controllers\TicketController.cs:line 32 (d399e594)

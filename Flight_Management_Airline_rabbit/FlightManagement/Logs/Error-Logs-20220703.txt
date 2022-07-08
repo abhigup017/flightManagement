@@ -1,0 +1,3 @@
+2022-07-03T19:16:10.7557093+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-03T19:16:10.8135242+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-03T19:16:10.8773282+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\FlightManagement\FlightManagement" (b5d60022)

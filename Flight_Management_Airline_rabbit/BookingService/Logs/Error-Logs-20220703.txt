@@ -1,0 +1,8 @@
+2022-07-03T18:11:38.4646042+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-03T18:11:38.4815235+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-03T18:11:38.4867647+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\FlightManagement\BookingService" (b5d60022)
+2022-07-03T18:13:00.0195167+05:30 8000000f-0000-f600-b63f-84710c7967bb [INF] Please enter a Email-Id. (a4532460)
+2022-07-03T18:13:34.2154142+05:30 80000010-0000-f600-b63f-84710c7967bb [INF] Please enter a Email-Id. (a4532460)
+2022-07-03T19:16:14.8906076+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-03T19:16:14.9071989+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-03T19:16:14.9159299+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\FlightManagement\BookingService" (b5d60022)
