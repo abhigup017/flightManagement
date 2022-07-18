@@ -38,6 +38,9 @@ namespace FlightManagement
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            //services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
+            //                                                        .AllowAnyMethod()
+            //                                                         .AllowAnyHeader()));
             services.AddDbContext<FlightManagementContext>(x => x.UseSqlServer(Configuration.GetConnectionString("FlightManagement")));
             services.AddScoped<IAirlineManagementRepository, AirlineManagementRepository>();
             services.AddApiVersioning(x =>
@@ -94,6 +97,10 @@ namespace FlightManagement
             }
 
             app.UseHttpsRedirection();
+            //app.UseCors(x =>
+            //x.AllowAnyOrigin()
+            //.AllowAnyMethod()
+            //.AllowAnyHeader());
             app.UseConsul(Configuration);
             app.UseSwagger();
             app.UseSwaggerUI();
@@ -102,7 +109,7 @@ namespace FlightManagement
 
             app.UseAuthentication();
             app.UseAuthorization();
-            
+
 
             app.UseEndpoints(endpoints =>
             {

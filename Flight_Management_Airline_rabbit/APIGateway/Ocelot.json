@@ -18,6 +18,14 @@
     },
     {
       "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/login/user/register",
+      "DownstreamScheme": "https",
+      "ServiceName": "loginService",
+      "UpstreamPathTemplate": "/api/1.0/user/register",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "UseServiceDiscovery": true,
       "DownstreamPathTemplate": "/api/1.0/flight/airline/register",
       "DownstreamScheme": "https",
       "ServiceName": "airlineService",
@@ -26,11 +34,35 @@
     },
     {
       "UseServiceDiscovery": true,
-      "DownstreamPathTemplate": "/api/1.0/flight/airline/block/airline/{airlineId}",
+      "DownstreamPathTemplate": "/api/1.0/flight/airline/block/{airlineId}",
       "DownstreamScheme": "https",
       "ServiceName": "airlineService",
-      "UpstreamPathTemplate": "/api/1.0/airline/block/airline/{airlineId}",
+      "UpstreamPathTemplate": "/api/1.0/airline/block/{airlineId}",
       "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/airline/unblock/{airlineId}",
+      "DownstreamScheme": "https",
+      "ServiceName": "airlineService",
+      "UpstreamPathTemplate": "/api/1.0/airline/unblock/{airlineId}",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/airline/all",
+      "DownstreamScheme": "https",
+      "ServiceName": "airlineService",
+      "UpstreamPathTemplate": "/api/1.0/airline/all",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/airline/remove/{airlineId}",
+      "DownstreamScheme": "https",
+      "ServiceName": "airlineService",
+      "UpstreamPathTemplate": "/api/1.0/airline/remove/{airlineId}",
+      "UpstreamHttpMethod": [ "Delete" ]
     },
     {
       "UseServiceDiscovery": true,
@@ -70,6 +102,110 @@
       "DownstreamScheme": "https",
       "ServiceName": "searchService",
       "UpstreamPathTemplate": "/api/1.0/flight/search",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/dropdown/gender",
+      "DownstreamScheme": "https",
+      "ServiceName": "dropdownService",
+      "UpstreamPathTemplate": "/api/1.0/dropdown/gender",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/dropdown/instrument",
+      "DownstreamScheme": "https",
+      "ServiceName": "dropdownService",
+      "UpstreamPathTemplate": "/api/1.0/dropdown/instrument",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/dropdown/locations",
+      "DownstreamScheme": "https",
+      "ServiceName": "dropdownService",
+      "UpstreamPathTemplate": "/api/1.0/dropdown/locations",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/dropdown/mealplan",
+      "DownstreamScheme": "https",
+      "ServiceName": "dropdownService",
+      "UpstreamPathTemplate": "/api/1.0/dropdown/mealplan",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/dropdown/roles",
+      "DownstreamScheme": "https",
+      "ServiceName": "dropdownService",
+      "UpstreamPathTemplate": "/api/1.0/dropdown/roles",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/dropdown/airlines",
+      "DownstreamScheme": "https",
+      "ServiceName": "dropdownService",
+      "UpstreamPathTemplate": "/api/1.0/dropdown/airlines",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/airline/inventory/search",
+      "DownstreamScheme": "https",
+      "ServiceName": "airlineService",
+      "UpstreamPathTemplate": "/api/1.0/airline/inventory/search",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/discount/add",
+      "DownstreamScheme": "https",
+      "ServiceName": "discountService",
+      "UpstreamPathTemplate": "/api/1.0/discount/add",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/discount/delete/{discountId}",
+      "DownstreamScheme": "https",
+      "ServiceName": "discountService",
+      "UpstreamPathTemplate": "/api/1.0/discount/delete/{discountId}",
+      "UpstreamHttpMethod": [ "Delete" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/discount/all",
+      "DownstreamScheme": "https",
+      "ServiceName": "discountService",
+      "UpstreamPathTemplate": "/api/1.0/discount/all",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/discount/code/{discountCode}",
+      "DownstreamScheme": "https",
+      "ServiceName": "discountService",
+      "UpstreamPathTemplate": "/api/1.0/discount/code/{discountCode}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/blob",
+      "DownstreamScheme": "https",
+      "ServiceName": "blobService",
+      "UpstreamPathTemplate": "/api/1.0/blob",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "UseServiceDiscovery": true,
+      "DownstreamPathTemplate": "/api/1.0/flight/blob/generatepdf",
+      "DownstreamScheme": "https",
+      "ServiceName": "blobService",
+      "UpstreamPathTemplate": "/api/1.0/blob/generatepdf",
       "UpstreamHttpMethod": [ "Post" ]
     }
   ],

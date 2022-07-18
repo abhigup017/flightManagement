@@ -44,5 +44,22 @@ namespace LoginService.Controllers
             }
         }
         #endregion
+
+        #region Register User
+        [HttpPost, Route("user/register")]
+        public IActionResult RegisterUser(UserRegistrationRequest userRegistrationRequest)
+        {
+            try
+            {
+                bool isRegistered = _loginManagementRepository.RegisterUser(userRegistrationRequest);
+                return Ok(new { isRegistered = isRegistered });
+            }
+            catch(Exception ex)
+            {
+                _logger.LogInformation(ex.Message + "Stack Trace:" + ex.StackTrace);
+                return StatusCode(500, ex.Message);
+            }
+        }
+        #endregion
     }
 }

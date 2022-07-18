@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NAr+vapZKw5DjTom684A89xzgIr8hlIZkPjdMjZ7BoVgtmh1yoe60UQYsTIFyESiiks7AtBr2ePFwqs0olfxuA==",
+  "dgSpecHash": "bhP9Fst5wymIKryHQoH0z0vAI7jYsKl+eooDDsiLBrm1Z8c3RYsvgfDCzC7v9oxdo0q2Ft+2Ips+Y6DPzTua9g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj",
+  "projectFilePath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\automatonymous\\5.0.1\\automatonymous.5.0.1.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\confluent.kafka\\1.5.0\\confluent.kafka.1.5.0.nupkg.sha512",

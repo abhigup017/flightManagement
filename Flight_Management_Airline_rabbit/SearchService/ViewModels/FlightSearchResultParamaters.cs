@@ -16,6 +16,7 @@ namespace SearchService.ViewModels
         public int MealPlanId { get; set; }
         public int VacantBusinessSeats { get; set; }
         public int VacantRegularSeats { get; set; }
+        public string FlightNumber { get; set; }
 
     }
 }

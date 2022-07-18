@@ -1,0 +1,46 @@
+2022-07-16T12:15:06.2450349+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-16T12:15:06.2727849+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-16T12:15:06.3239317+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\SearchService" (b5d60022)
+2022-07-16T15:14:41.3146409+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-16T15:14:41.3378996+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-16T15:14:41.3488503+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\SearchService" (b5d60022)
+2022-07-16T16:47:14.9808819+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-16T16:47:14.9957891+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-16T16:47:15.0041585+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\SearchService" (b5d60022)
+2022-07-16T19:56:20.5425270+05:30 80000095-0001-f700-b63f-84710c7967bb [ERR] Failed executing DbCommand ("951"ms) [Parameters=["@__flightSearchRequest_RoundTripRequest_SourceId_0='?' (DbType = Int32), @__flightSearchRequest_RoundTripRequest_DestinationId_1='?' (DbType = Int32), @__flightSearchRequest_RoundTripRequest_TravelDateTime_Date_2='?' (DbType = DateTime)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[FlightId], [f0].[FlightDayScheduleId], [f0].[StartDateTime] AS [FlightDateTime], [f].[FlightNumber], [a].[AirlineName], [a].[AirlineLogo], [f].[TicketCost] AS [Cost], [f].[MealPlanId], [f].[VacantBusinessSeats], [f].[VacantRegularSeats]
+FROM [AIRLINE] AS [a]
+INNER JOIN [FLIGHTSCHEDULE] AS [f] ON [a].[AirLineId] = [f].[AirLineId]
+INNER JOIN [FLIGHTDAYSSCHEDULE] AS [f0] ON [f].[FlightDayScheduleId] = [f0].[FlightDayScheduleId]
+WHERE ((([f0].[SourceLocationId] = @__flightSearchRequest_RoundTripRequest_SourceId_0) AND ([f0].[DestinationLocationId] = @__flightSearchRequest_RoundTripRequest_DestinationId_1)) AND (CONVERT(date, [f0].[StartDateTime]) = @__flightSearchRequest_RoundTripRequest_TravelDateTime_Date_2)) AND ([a].[IsBlocked] = CAST(0 AS bit))" (627a98df)
+2022-07-16T19:56:20.5916550+05:30 80000095-0001-f700-b63f-84710c7967bb [ERR] An exception occurred while iterating over the results of a query for context type '"SearchService.Models.FlightManagementContext"'."
+""System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at Microsoft.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at Microsoft.Data.SqlClient.TdsParser.WriteUnterminatedValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj, Int32 paramSize, Boolean isDataFeed)
+   at Microsoft.Data.SqlClient.TdsParser.TDSExecuteRPCAddParameter(TdsParserStateObject stateObj, SqlParameter param, MetaType mt, Byte options)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()" (f5c7ac34)
+System.Data.SqlTypes.SqlTypeException: SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.
+   at System.Data.SqlTypes.SqlDateTime.FromTimeSpan(TimeSpan value)
+   at System.Data.SqlTypes.SqlDateTime.FromDateTime(DateTime value)
+   at Microsoft.Data.SqlClient.MetaType.FromDateTime(DateTime dateTime, Byte cb)
+   at Microsoft.Data.SqlClient.TdsParser.WriteUnterminatedValue(Object value, MetaType type, Byte scale, Int32 actualLength, Int32 encodingByteSize, Int32 offset, TdsParserStateObject stateObj, Int32 paramSize, Boolean isDataFeed)
+   at Microsoft.Data.SqlClient.TdsParser.TDSExecuteRPCAddParameter(TdsParserStateObject stateObj, SqlParameter param, MetaType mt, Byte options)
+   at Microsoft.Data.SqlClient.TdsParser.TdsExecuteRPC(SqlCommand cmd, _SqlRPC[] rpcArray, Int32 timeout, Boolean inSchema, SqlNotificationRequest notificationRequest, TdsParserStateObject stateObj, Boolean isCommandProc, Boolean sync, TaskCompletionSource`1 completion, Int32 startRpc, Int32 startParam)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+2022-07-16T19:56:21.0596314+05:30 80000095-0001-f700-b63f-84710c7967bb [INF] SqlDateTime overflow. Must be between 1/1/1753 12:00:00 AM and 12/31/9999 11:59:59 PM.Stack Trace:   at SearchService.Service.SearchManagementRepository.SearchFlightsForBooking(FlightSearchRequest flightSearchRequest) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\SearchService\Service\SearchManagementRepository.cs:line 96
+   at SearchService.Controllers.SearchController.SearchFlightsForBooking(FlightSearchRequest flightSearchRequest) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\SearchService\Controllers\SearchController.cs:line 34 (850e9714)

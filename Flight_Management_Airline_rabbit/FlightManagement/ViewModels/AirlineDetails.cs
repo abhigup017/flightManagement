@@ -7,6 +7,7 @@ namespace AirlineService.ViewModels
 {
     public class AirlineDetails
     {
+        public int AirlineId { get; set; }
         public string AirlineName { get; set; }
         public string AirlineLogo { get; set; }
         public string AirlineContact { get; set; }

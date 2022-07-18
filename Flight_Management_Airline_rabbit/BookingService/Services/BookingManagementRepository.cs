@@ -67,20 +67,64 @@ namespace BookingService.Services
             {
                 if (!string.IsNullOrEmpty(emailId))
                 {
-                    response = (from airline in _dbContext.Airlines
-                                join bookings in _dbContext.Bookings
-                                on airline.AirLineId equals bookings.FlightId
+                    response = (from bookings in _dbContext.Bookings
+                                join schedule in _dbContext.Flightschedules
+                                on bookings.FlightId equals schedule.FlightId
+                                join airline in _dbContext.Airlines
+                                on schedule.AirLineId equals airline.AirLineId
+                                join mealPlan in _dbContext.Mealplans
+                                on bookings.MealPlanId equals mealPlan.MealPlanId
+                                join scheduleDay in _dbContext.Flightdaysschedules
+                                on schedule.FlightDayScheduleId equals scheduleDay.FlightDayScheduleId
+                                join sourceLocation in _dbContext.Locations
+                                on scheduleDay.SourceLocationId equals sourceLocation.LocationId
+                                join destinationLocation in _dbContext.Locations
+                                on scheduleDay.DestinationLocationId equals destinationLocation.LocationId
                                 where bookings.CustomerEmailId == emailId
                                 select new BookedTicketsHistory
                                 {
                                     AirlineLogo = airline.AirlineLogo,
+                                    AirlineName = airline.AirlineName,
+                                    FlightNumber = schedule.FlightNumber,
                                     TotalCost = bookings.TotalCost,
                                     TravellingDate = bookings.TravelDate,
                                     BookingId = bookings.BookingId,
                                     PnrNumber = bookings.Pnrnumber,
                                     IsCancelled = (bool)bookings.IsCancelled,
-                                    IsCancellationAllowed = (bool)bookings.IsCancelled ? false : Convert.ToInt32(bookings.TravelDate.Subtract(DateTime.Now).TotalHours) > 24 ? true : false
+                                    IsCancellationAllowed = (bool)bookings.IsCancelled ? false : Convert.ToInt32(bookings.TravelDate.Subtract(DateTime.Now).TotalHours) > 24 ? true : false,
+                                    CustomerName = bookings.CustomerName,
+                                    CustomerEmailId = bookings.CustomerEmailId,
+                                    NoOfSeats = bookings.NoOfSeats,
+                                    MealPlanId = bookings.MealPlanId,
+                                    MealPlanType = mealPlan.MealPlanType,
+                                    BookedOn = bookings.BookedOn,
+                                    SourceLocation = sourceLocation.LocationName,
+                                    DestinationLocation = destinationLocation.LocationName
                                 }).OrderByDescending(x => x.TravellingDate).ToList();
+
+                    if(response != null && response.Count > 0)
+                    {
+                        foreach(var booking in response)
+                        {
+                            //booking.BookingPassengers = new List<BookingPassengers>();
+                            booking.BookingPassengers = (from passenger in _dbContext.Bookingpassengers
+                                                         join gender in _dbContext.Gendertypes
+                                                         on passenger.GenderId equals gender.GenderId
+                                                         where passenger.BookingId == booking.BookingId
+                                                         select new BookingPassengers
+                                                         {
+                                                             PassengerId = passenger.PassengerId,
+                                                             BookingId = passenger.BookingId,
+                                                             PassengerName = passenger.PassengerName,
+                                                             GenderId = passenger.GenderId,
+                                                             GenderType = gender.GenderValue,
+                                                             PassengerAge = passenger.PassengerAge,
+                                                             SeatNo = passenger.SeatNo,
+                                                             IsBusinessSeat = passenger.IsBusinessSeat,
+                                                             IsRegularSeat = passenger.IsRegularSeat
+                                                         }).ToList();
+                        }
+                    }
                 }
                 else
                 {

@@ -45,6 +45,7 @@ namespace SearchService.Service
                                                       FlightId = flightSchedule.FlightId,
                                                       FlightDayScheduleId = flightDaySchedule.FlightDayScheduleId,
                                                       FlightDateTime = flightDaySchedule.StartDateTime,
+                                                      FlightNumber = flightSchedule.FlightNumber,
                                                       AirlineName = airline.AirlineName,
                                                       AirlineLogo = airline.AirlineLogo,
                                                       Cost = flightSchedule.TicketCost,
@@ -58,7 +59,7 @@ namespace SearchService.Service
                     flightSearchResults.OnwardTripResults = flightSearchResults.OnwardTripResults.Where(x => x.FlightDateTime.TimeOfDay <= flightSearchRequest.OnwardTripRequest.TravelDateTime.TimeOfDay).ToList();
                 }
 
-                if(flightSearchRequest.RoundTripRequest != null)
+                if(flightSearchRequest.RoundTripRequest != null && flightSearchRequest.RoundTripRequest.SourceId > 0)
                 {
                     //Get results of Onward Trip
                     flightSearchResults.RoundTripResults = (from airline in _flightManagementContext.Airlines
@@ -75,6 +76,7 @@ namespace SearchService.Service
                                                           FlightId = flightSchedule.FlightId,
                                                           FlightDayScheduleId = flightDaySchedule.FlightDayScheduleId,
                                                           FlightDateTime = flightDaySchedule.StartDateTime,
+                                                          FlightNumber = flightSchedule.FlightNumber,
                                                           AirlineName = airline.AirlineName,
                                                           AirlineLogo = airline.AirlineLogo,
                                                           Cost = flightSchedule.TicketCost,

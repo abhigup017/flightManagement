@@ -15,7 +15,7 @@ namespace AirlineService.Controllers
     [ApiVersion("1.0")]
     [Route("api/{v:apiVersion}/flight/airline")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = "1")]//1 = Admin, 2 = User
     public class AirlineController : ControllerBase
     {
         private readonly IAirlineManagementRepository _airlineManagementRepository;
@@ -62,7 +62,7 @@ namespace AirlineService.Controllers
         #endregion
 
         #region Block Airline
-        [HttpPut, Route("block/airline/{airlineId}")]
+        [HttpPut, Route("block/{airlineId}")]
         public IActionResult BlockAirline(int airlineId)
         {
             try
@@ -74,6 +74,74 @@ namespace AirlineService.Controllers
             {
                 _logger.LogInformation(ex.Message + "Stack Trace:" + ex.StackTrace);
                 return StatusCode(500, ex.Message);
+            }
+        }
+        #endregion
+
+        #region Get All Airlines
+        [HttpGet, Route("all")]
+        public IActionResult GetAllAirlines()
+        {
+            try
+            {
+                var response = _airlineManagementRepository.GetAllAirlines();
+                return Ok(response);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogInformation(ex.Message + "Stack Trace:" + ex.StackTrace);
+                return StatusCode(500);
+            }
+        }
+        #endregion
+
+        #region Unblock Airline
+        [HttpPut, Route("unblock/{airlineId}")]
+        public IActionResult UnblockAirline(int airlineId)
+        {
+            try
+            {
+                bool isUnblocked = _airlineManagementRepository.UnBlockAirline(airlineId);
+                return Ok(new { isUnblocked = isUnblocked });
+            }
+            catch(Exception ex)
+            {
+                _logger.LogInformation(ex.Message + "Stack Trace:" + ex.StackTrace);
+                return StatusCode(500);
+            }
+        }
+        #endregion
+
+        #region Remove Airline
+        [HttpDelete, Route("remove/{airlineId}")]
+        public IActionResult DeleteAirline(int airlineId)
+        {
+            try
+            {
+                bool isDeleted = _airlineManagementRepository.DeleteAirline(airlineId);
+                return Ok(new { isDeleted = isDeleted });
+            }
+            catch(Exception ex)
+            {
+                _logger.LogInformation(ex.Message + "Stack Trace:" + ex.StackTrace);
+                return StatusCode(500);
+            }
+        }
+        #endregion
+
+        #region Search Flight Schedule
+        [HttpPost, Route("inventory/search")]
+        public IActionResult SearchSchedules(SearchScheduleRequest searchScheduleRequest)
+        {
+            try
+            {
+                var schedules = _airlineManagementRepository.SearchSchedules(searchScheduleRequest);
+                return Ok(schedules);
+            }
+            catch(Exception ex)
+            {
+                _logger.LogInformation(ex.Message + "Stack Trace:" + ex.StackTrace);
+                return StatusCode(500);
             }
         }
         #endregion

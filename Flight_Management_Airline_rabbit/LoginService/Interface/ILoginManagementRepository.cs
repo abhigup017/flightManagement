@@ -9,5 +9,6 @@ namespace LoginService.Interface
     public interface ILoginManagementRepository
     {
         Token AuthenticateAdmin(Login login);
+        bool RegisterUser(UserRegistrationRequest userRegistrationRequest);
     }
 }

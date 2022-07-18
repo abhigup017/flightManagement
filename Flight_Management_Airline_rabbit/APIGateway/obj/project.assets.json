@@ -5096,11 +5096,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj",
+      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj",
       "projectName": "APIGateway",
-      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj",
+      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj",
       "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\APIGateway\\obj\\",
+      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\APIGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

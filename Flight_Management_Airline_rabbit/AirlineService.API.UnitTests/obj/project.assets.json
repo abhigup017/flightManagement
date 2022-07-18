@@ -10439,11 +10439,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\AirlineService.API.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\AirlineService.API.UnitTests.csproj",
       "projectName": "AirlineService.API.UnitTests",
-      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\AirlineService.API.UnitTests.csproj",
+      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\AirlineService.API.UnitTests.csproj",
       "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -10466,8 +10466,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj": {
-              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj"
+            "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj": {
+              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj"
             }
           }
         }

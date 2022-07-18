@@ -8802,11 +8802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\BookingService\\BookingService.csproj",
+      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\BookingService\\BookingService.csproj",
       "projectName": "BookingService",
-      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\BookingService\\BookingService.csproj",
+      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\BookingService\\BookingService.csproj",
       "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\BookingService\\obj\\",
+      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\BookingService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -8829,11 +8829,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\BookingConsumer.Microservice\\BookingConsumer.Microservice.csproj": {
-              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\BookingConsumer.Microservice\\BookingConsumer.Microservice.csproj"
+            "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\BookingConsumer.Microservice\\BookingConsumer.Microservice.csproj": {
+              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\BookingConsumer.Microservice\\BookingConsumer.Microservice.csproj"
             },
-            "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
+            "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
             }
           }
         }

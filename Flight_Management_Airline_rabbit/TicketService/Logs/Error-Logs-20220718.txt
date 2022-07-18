@@ -1,0 +1,20 @@
+2022-07-18T00:49:32.1848099+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-18T00:49:32.1960005+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-18T00:49:32.2053600+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService" (b5d60022)
+2022-07-18T00:58:27.8709841+05:30 800001d6-0003-f900-b63f-84710c7967bb [INF] PNR Number entered is Invalid!Stack Trace:   at TicketService.Service.TicketManagementRepository.GetTicketDetailsFromPNR(String PNRNumber) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService\Service\TicketManagementRepository.cs:line 95
+   at TicketService.Controllers.TicketController.GetTicketDetailsFromPNR(String pnr) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService\Controllers\TicketController.cs:line 33 (c019ddfb)
+2022-07-18T00:59:54.0420463+05:30 800000cc-0000-fe00-b63f-84710c7967bb [INF] PNR Number entered is Invalid!Stack Trace:   at TicketService.Service.TicketManagementRepository.GetTicketDetailsFromPNR(String PNRNumber) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService\Service\TicketManagementRepository.cs:line 95
+   at TicketService.Controllers.TicketController.GetTicketDetailsFromPNR(String pnr) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService\Controllers\TicketController.cs:line 33 (c019ddfb)
+2022-07-18T09:10:25.0574142+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-18T09:10:25.0764364+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-18T09:10:25.0833680+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService" (b5d60022)
+2022-07-18T09:12:10.1762658+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-18T09:12:10.2047070+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-18T09:12:10.2150397+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService" (b5d60022)
+2022-07-18T10:24:32.5393449+05:30 80000043-0005-e800-b63f-84710c7967bb [INF] PNR Number entered is Invalid!Stack Trace:   at TicketService.Service.TicketManagementRepository.GetTicketDetailsFromPNR(String PNRNumber) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService\Service\TicketManagementRepository.cs:line 95
+   at TicketService.Controllers.TicketController.GetTicketDetailsFromPNR(String pnr) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService\Controllers\TicketController.cs:line 33 (c019ddfb)
+2022-07-18T10:24:48.4548624+05:30 800001c5-0003-f100-b63f-84710c7967bb [INF] PNR Number entered is Invalid!Stack Trace:   at TicketService.Service.TicketManagementRepository.GetTicketDetailsFromPNR(String PNRNumber) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService\Service\TicketManagementRepository.cs:line 95
+   at TicketService.Controllers.TicketController.GetTicketDetailsFromPNR(String pnr) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService\Controllers\TicketController.cs:line 33 (c019ddfb)
+2022-07-18T12:29:35.1081130+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-18T12:29:35.1210576+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-18T12:29:35.1294849+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\TicketService" (b5d60022)

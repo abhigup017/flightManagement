@@ -1,0 +1,120 @@
+2022-07-17T01:51:21.2274212+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T01:51:21.2519479+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T01:51:21.2742172+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T01:58:59.2837475+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T01:58:59.3716409+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T01:58:59.3815609+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T02:04:35.3883139+05:30  [ERR] Message NACK failed: 5, Original Exception: "System.Threading.Channels.ChannelClosedException: The channel has been closed.
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken)
+   at MassTransit.Transports.ReceivePipeDispatcher.Dispatch(ReceiveContext context, ReceiveLockContext receiveLock)" (3beb077b)
+System.Threading.Channels.ChannelClosedException: The channel has been closed.
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken)
+   at MassTransit.RabbitMqTransport.Pipeline.RabbitMqReceiveLockContext.Faulted(Exception exception)
+2022-07-17T02:04:35.3889400+05:30  [ERR] Message NACK failed: 6, Original Exception: "System.Threading.Channels.ChannelClosedException: The channel has been closed.
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken)
+   at MassTransit.Transports.ReceivePipeDispatcher.Dispatch(ReceiveContext context, ReceiveLockContext receiveLock)" (3beb077b)
+System.Threading.Channels.ChannelClosedException: The channel has been closed.
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken)
+   at MassTransit.RabbitMqTransport.Pipeline.RabbitMqReceiveLockContext.Faulted(Exception exception)
+2022-07-17T02:04:35.4170432+05:30  [ERR] T-FAULT rabbitmq://localhost/bookingQueue "8ae40000-568a-0050-3530-08da676a3096" (c5303319)
+System.Threading.Channels.ChannelClosedException: The channel has been closed.
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken)
+   at MassTransit.Transports.ReceivePipeDispatcher.Dispatch(ReceiveContext context, ReceiveLockContext receiveLock)
+   at MassTransit.Transports.ReceivePipeDispatcher.Dispatch(ReceiveContext context, ReceiveLockContext receiveLock)
+   at MassTransit.Transports.ReceivePipeDispatcher.Dispatch(ReceiveContext context, ReceiveLockContext receiveLock)
+   at MassTransit.RabbitMqTransport.Pipeline.RabbitMqBasicConsumer.<>c__DisplayClass23_0.<<HandleBasicDeliver>b__0>d.MoveNext()
+2022-07-17T02:04:35.4170506+05:30  [ERR] T-FAULT rabbitmq://localhost/bookingQueue "8ae40000-568a-0050-3553-08da676a3096" (c5303319)
+System.Threading.Channels.ChannelClosedException: The channel has been closed.
+   at MassTransit.Util.ChannelExecutor.Run[T](Func`1 method, CancellationToken cancellationToken)
+   at MassTransit.Transports.ReceivePipeDispatcher.Dispatch(ReceiveContext context, ReceiveLockContext receiveLock)
+   at MassTransit.Transports.ReceivePipeDispatcher.Dispatch(ReceiveContext context, ReceiveLockContext receiveLock)
+   at MassTransit.Transports.ReceivePipeDispatcher.Dispatch(ReceiveContext context, ReceiveLockContext receiveLock)
+   at MassTransit.RabbitMqTransport.Pipeline.RabbitMqBasicConsumer.<>c__DisplayClass23_0.<<HandleBasicDeliver>b__0>d.MoveNext()
+2022-07-17T02:07:51.5021314+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T02:07:51.5460763+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T02:07:51.5681536+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T12:21:02.8167538+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T12:21:02.8413822+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T12:21:02.8577524+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T13:05:21.7478496+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T13:05:21.8395901+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T13:05:21.8658356+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T13:44:37.9999788+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T13:44:38.0137508+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T13:44:38.0254027+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T15:01:50.5601316+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T15:01:50.5764176+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T15:01:50.5877583+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T15:08:35.1021592+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T15:08:35.1241835+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T15:08:35.1781308+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T15:27:10.3872851+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T15:27:10.4052690+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T15:27:10.4102336+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T17:12:21.4381455+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T17:12:21.5687511+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T17:12:21.6309552+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T17:13:10.2605355+05:30 8000018f-0000-fb00-b63f-84710c7967bb [INF] The LINQ expression 'DbSet<Booking>()
+    .Join(
+        inner: DbSet<Flightschedule>(), 
+        outerKeySelector: b => b.FlightId, 
+        innerKeySelector: f => f.FlightId, 
+        resultSelector: (b, f) => new TransparentIdentifier<Booking, Flightschedule>(
+            Outer = b, 
+            Inner = f
+        ))
+    .Join(
+        inner: DbSet<Airline>(), 
+        outerKeySelector: ti => ti.Inner.AirLineId, 
+        innerKeySelector: a => a.AirLineId, 
+        resultSelector: (ti, a) => new TransparentIdentifier<TransparentIdentifier<Booking, Flightschedule>, Airline>(
+            Outer = ti, 
+            Inner = a
+        ))
+    .Join(
+        inner: DbSet<Mealplan>(), 
+        outerKeySelector: ti0 => ti0.Outer.Outer.MealPlanId, 
+        innerKeySelector: m => m.MealPlanId, 
+        resultSelector: (ti0, m) => new TransparentIdentifier<TransparentIdentifier<TransparentIdentifier<Booking, Flightschedule>, Airline>, Mealplan>(
+            Outer = ti0, 
+            Inner = m
+        ))
+    .Where(ti1 => ti1.Outer.Outer.Outer.CustomerEmailId == __emailId_0)
+    .OrderByDescending(ti1 => ti1.Outer.Outer.Outer.TravelDate.ToString("dd" + BookingManagementRepository.GetDaySuffix(ti1.Outer.Outer.Outer.TravelDate.Day) + " mm yyyy"))' could not be translated. Additional information: Translation of method 'BookingService.Services.BookingManagementRepository.GetDaySuffix' failed. If this method can be mapped to your custom function, see https://go.microsoft.com/fwlink/?linkid=2132413 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.Stack Trace:   at BookingService.Services.BookingManagementRepository.GetBookedTicketsHistory(String emailId) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService\Services\BookingManagementRepository.cs:line 127
+   at BookingService.Controllers.BookingController.GetBookedTicketsHistory(String emailId) in C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService\Controllers\BookingController.cs:line 51 (ac27c3de)
+2022-07-17T17:15:19.0844172+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T17:15:19.1080354+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T17:15:19.1134813+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T17:27:43.1024047+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T17:27:43.1168615+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T17:27:43.1251320+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T19:05:09.7303172+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T19:05:09.7656120+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T19:05:09.7712383+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T19:05:55.8187472+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T19:05:55.8318923+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T19:05:55.8366894+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T19:35:23.0352000+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T19:35:23.0542552+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T19:35:23.0598121+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T19:37:04.4833846+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T19:37:04.4944458+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T19:37:04.4979026+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T20:05:50.3020277+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T20:05:50.3148796+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T20:05:50.3201645+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T20:19:19.6431876+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T20:19:19.6558228+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T20:19:19.6628188+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T21:24:09.9389251+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T21:24:09.9562782+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T21:24:09.9690539+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T21:37:57.0895087+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T21:37:57.1078103+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T21:37:57.1162558+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T21:57:29.6822229+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T21:57:29.7053703+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T21:57:29.7123913+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)
+2022-07-17T22:36:10.5185375+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-17T22:36:10.5359046+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-17T22:36:10.5500343+05:30  [INF] Content root path: "C:\Users\cogdotnet929\source\repos\Git commit\Flight_Management_Airline_rabbit\BookingService" (b5d60022)

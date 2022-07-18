@@ -8,5 +8,6 @@ namespace LoginService.ViewModel
     public class Token
     {
         public string token { get; set; }
+        public string role { get; set; }
     }
 }

@@ -8,6 +8,7 @@ namespace TicketService.ViewModels
 {
     public class TicketDetails
     {
+        public string AirlineLogo { get; set; }
         public int BookingId { get; set; }
         public int FlightId { get; set; }
         public string CustomerName { get; set; }
@@ -20,6 +21,8 @@ namespace TicketService.ViewModels
         public DateTime BookedOn { get; set; }
         public decimal TotalCost { get; set; }
         public bool? IsCancelled { get; set; }
+        public string SourceLocation { get; set; }
+        public string DestinationLocation { get; set; }
         public List<BookingPassengers> BookingPassenger { get; set; }
     }
 }

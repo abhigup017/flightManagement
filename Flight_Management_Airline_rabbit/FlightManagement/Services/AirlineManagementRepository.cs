@@ -236,5 +236,188 @@ namespace AirlineService.Services
             return isBlocked;
         }
         #endregion
+
+        #region GetAllAirlines
+        /// <summary>
+        /// Gets all the registered airline
+        /// </summary>
+        /// <returns>List of registered airlines</returns>
+        public List<AirlineDetails> GetAllAirlines()
+        {
+            List<AirlineDetails> airlineDetails = new List<AirlineDetails>();
+            try
+            {
+                airlineDetails = (from airline in _flightManagementContext.Airlines
+                                  select new AirlineDetails
+                                  {
+                                      AirlineId = airline.AirLineId,
+                                      AirlineName = airline.AirlineName,
+                                      AirlineAddress = airline.AirlineAddress,
+                                      AirlineContact = airline.AirlineContact,
+                                      AirlineDescription = airline.AirlineDescription,
+                                      AirlineLogo = airline.AirlineLogo,
+                                      IsBlocked = airline.IsBlocked
+                                  }).ToList();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+
+            return airlineDetails;
+        }
+        #endregion
+
+        #region Unblock Airline
+        /// <summary>
+        /// Unblocks a airline
+        /// </summary>
+        /// <param name="airlineId"></param>
+        /// <returns>A boolen flag</returns>
+        public bool UnBlockAirline(int airlineId)
+        {
+            bool isUnblocked = false;
+            using (var transaction = _flightManagementContext.Database.BeginTransaction())
+            {
+                try
+                {
+                    var airline = _flightManagementContext.Airlines.Where(x => x.AirLineId == airlineId).FirstOrDefault();
+                    airline.IsBlocked = false;
+                    _flightManagementContext.SaveChanges();
+                    transaction.Commit();
+                    isUnblocked = true;
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    throw ex;
+                }
+            }
+
+            return isUnblocked;
+        }
+        #endregion
+
+        #region Delete Airline
+        /// <summary>
+        /// Deletes an Airline from the airline id
+        /// </summary>
+        /// <param name="airlineId"></param>
+        /// <returns>A boolean flag</returns>
+        public bool DeleteAirline(int airlineId)
+        {
+            bool isDeleted = false;
+
+            using (var transaction = _flightManagementContext.Database.BeginTransaction())
+            {
+                try
+                {
+                    var airline = _flightManagementContext.Airlines.Where(x => x.AirLineId == airlineId).FirstOrDefault();
+                    if(airline != null && airline.AirLineId > 0)
+                    {
+                        _flightManagementContext.Airlines.Remove(airline);
+                        _flightManagementContext.SaveChanges();
+                        isDeleted = true;
+                    }
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    throw ex;
+                }
+            }
+
+            return isDeleted;
+        }
+        #endregion
+
+        #region Search Airline schedules
+        /// <summary>
+        /// Searches for airline schedules from the search criteria
+        /// </summary>
+        /// <param name="searchScheduleRequest"></param>
+        /// <returns>List of airline schedules</returns>
+        public List<AirlineScheduleDetails> SearchSchedules(SearchScheduleRequest searchScheduleRequest)
+        {
+            List<AirlineScheduleDetails> airlineScheduleDetails = new List<AirlineScheduleDetails>();
+
+            try
+            {
+                airlineScheduleDetails = (from schedule in _flightManagementContext.Flightschedules
+                                          join daySchedule in _flightManagementContext.Flightdaysschedules
+                                          on schedule.FlightDayScheduleId equals daySchedule.FlightDayScheduleId
+                                          join airline in _flightManagementContext.Airlines
+                                          on schedule.AirLineId equals airline.AirLineId
+                                          join instrument in _flightManagementContext.InstrumentTypes
+                                          on schedule.InstrumentId equals instrument.InstrumentId
+                                          join mealPlan in _flightManagementContext.Mealplans
+                                          on schedule.MealPlanId equals mealPlan.MealPlanId
+                                          join sourceLocation in _flightManagementContext.Locations
+                                          on daySchedule.SourceLocationId equals sourceLocation.LocationId
+                                          join destinationLocation in _flightManagementContext.Locations
+                                          on daySchedule.DestinationLocationId equals destinationLocation.LocationId
+                                          select new AirlineScheduleDetails
+                                          {
+                                              FlightId = schedule.FlightId,
+                                              FlightNumber = schedule.FlightNumber,
+                                              AirLineId = schedule.AirLineId,
+                                              AirlineName = airline.AirlineName,
+                                              AirlineLogo = airline.AirlineLogo,
+                                              FlightDayScheduleId = schedule.FlightDayScheduleId,
+                                              InstrumentId = schedule.InstrumentId,
+                                              InstrumentType = instrument.InstrumentName,
+                                              BusinessSeatsNo = schedule.BusinessSeatsNo,
+                                              RegularSeatsNo = schedule.RegularSeatsNo,
+                                              TicketCost = schedule.TicketCost,
+                                              NoOfRows = schedule.NoOfRows,
+                                              MealPlanId = schedule.MealPlanId,
+                                              MealPlanType = mealPlan.MealPlanType,
+                                              SourceLocationId = daySchedule.SourceLocationId,
+                                              SourceLocation = sourceLocation.LocationName,
+                                              DestinationLocationId = daySchedule.DestinationLocationId,
+                                              DestinationLocation = destinationLocation.LocationName,
+                                              StartDateTime = daySchedule.StartDateTime,
+                                              EndDateTime = daySchedule.EndDateTime,
+                                              DurationInMinutes = 0
+                                          }).ToList();
+
+                if(airlineScheduleDetails != null && airlineScheduleDetails.Count > 0)
+                {
+                    if(searchScheduleRequest.AirlineId > 0)
+                    {
+                        airlineScheduleDetails = airlineScheduleDetails.Where(x => x.AirLineId == searchScheduleRequest.AirlineId).ToList();
+                    }
+                    if(!string.IsNullOrEmpty(searchScheduleRequest.FlightNumber))
+                    {
+                        airlineScheduleDetails = airlineScheduleDetails.Where(x => x.FlightNumber.ToLower().Contains(searchScheduleRequest.FlightNumber.ToLower())).ToList();
+                    }
+                    if(searchScheduleRequest.InstrumentUsed > 0)
+                    {
+                        airlineScheduleDetails = airlineScheduleDetails.Where(x => x.InstrumentId == searchScheduleRequest.InstrumentUsed).ToList();
+                    }
+                    if(searchScheduleRequest.SourceLocationId > 0)
+                    {
+                        airlineScheduleDetails = airlineScheduleDetails.Where(x => x.SourceLocationId == searchScheduleRequest.SourceLocationId).ToList();
+                    }
+                    if(searchScheduleRequest.DestinationLocationId > 0)
+                    {
+                        airlineScheduleDetails = airlineScheduleDetails.Where(x => x.DestinationLocationId == searchScheduleRequest.DestinationLocationId).ToList();
+                    }
+                    if(searchScheduleRequest.ScheduleDate != null)
+                    {
+                        var startDate = Convert.ToDateTime(searchScheduleRequest.ScheduleDate);
+                        airlineScheduleDetails = airlineScheduleDetails.Where(x => x.StartDateTime.Date == startDate.Date).ToList();
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+
+            return airlineScheduleDetails;
+        }
+        #endregion
     }
 }

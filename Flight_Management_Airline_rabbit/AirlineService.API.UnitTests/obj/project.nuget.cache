@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fsPVs5wPQfj85ikzOeIs3WP2WiKGQvUka8b/tnLz8V3NPgIngaH8weFhjOEhKa5s0qeXkkK+EGomq+VjJfQVsw==",
+  "dgSpecHash": "BqAK8P64pcLQ4rc9JnIohq17xiFALqDy33j2IaRQ96ly5onXzgI7i96J7l5qgpXxiCPXcubxfaQFeW2HaFYvJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\AirlineService.API.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\AirlineService.API.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\automatonymous\\5.0.1\\automatonymous.5.0.1.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\confluent.kafka\\1.5.0\\confluent.kafka.1.5.0.nupkg.sha512",

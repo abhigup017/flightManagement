@@ -27,6 +27,13 @@ namespace APIGateway
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddRazorPages();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+            });
             services.AddOcelot().AddConsul();
         }
 
@@ -55,6 +62,7 @@ namespace APIGateway
             //{
             //    endpoints.MapRazorPages();
             //});
+            app.UseCors("CorsPolicy");
             app.UseOcelot().Wait();
         }
     }

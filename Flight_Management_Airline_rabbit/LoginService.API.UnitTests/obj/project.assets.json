@@ -9681,11 +9681,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\LoginService.API.UnitTests\\LoginService.API.UnitTests.csproj",
+      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\LoginService.API.UnitTests\\LoginService.API.UnitTests.csproj",
       "projectName": "LoginService.API.UnitTests",
-      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\LoginService.API.UnitTests\\LoginService.API.UnitTests.csproj",
+      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\LoginService.API.UnitTests\\LoginService.API.UnitTests.csproj",
       "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\LoginService.API.UnitTests\\obj\\",
+      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\LoginService.API.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -9708,8 +9708,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\LoginService\\LoginService.csproj": {
-              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Flight_Management_Airline_rabbit\\LoginService\\LoginService.csproj"
+            "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\LoginService\\LoginService.csproj": {
+              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\LoginService\\LoginService.csproj"
             }
           }
         }
