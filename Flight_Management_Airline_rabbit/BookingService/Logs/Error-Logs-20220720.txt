@@ -1,0 +1,3 @@
+2022-07-20T09:24:50.0054042+05:30  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-07-20T09:24:50.0322808+05:30  [INF] Hosting environment: "Development" (c3307c92)
+2022-07-20T09:24:50.0357411+05:30  [INF] Content root path: "D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\BookingService" (b5d60022)

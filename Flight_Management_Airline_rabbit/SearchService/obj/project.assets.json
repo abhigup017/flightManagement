@@ -8044,11 +8044,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\SearchService\\SearchService.csproj",
+      "projectUniqueName": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\SearchService\\SearchService.csproj",
       "projectName": "SearchService",
-      "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\SearchService\\SearchService.csproj",
+      "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\SearchService\\SearchService.csproj",
       "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\SearchService\\obj\\",
+      "outputPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\SearchService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -8071,8 +8071,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
+            "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
+              "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
             }
           }
         }

@@ -3,9 +3,12 @@ using AirlineService.Interfaces;
 using AirlineService.Models;
 using AirlineService.Services;
 using Common;
+using IdentityServer4.AccessTokenValidation;
 using MassTransit;
 using MassTransit.KafkaIntegration;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -49,24 +52,41 @@ namespace FlightManagement
                 x.AssumeDefaultVersionWhenUnspecified = true;
                 x.ReportApiVersions = true;
             });
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(o => {
-                var key = Encoding.UTF8.GetBytes(Configuration["JWT:Key"]);
-                o.SaveToken = true;
-                o.TokenValidationParameters = new TokenValidationParameters
+            //services.AddAuthentication(x =>
+            //{
+            //    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            //    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            //}).AddJwtBearer(o => {
+            //    var key = Encoding.UTF8.GetBytes(Configuration["JWT:Key"]);
+            //    o.SaveToken = true;
+            //    o.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateAudience = false,
+            //        ValidateIssuer = false,
+            //        ValidateLifetime = true,
+            //        ValidateIssuerSigningKey = true,
+            //        ValidIssuer = Configuration["JWT:Issuer"],
+            //        ValidAudience = Configuration["JWT:Audience"],
+            //        IssuerSigningKey = new SymmetricSecurityKey(key)
+            //    };
+            //});
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                .AddIdentityServerAuthentication(x =>
                 {
-                    ValidateAudience = false,
-                    ValidateIssuer = false,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = Configuration["JWT:Issuer"],
-                    ValidAudience = Configuration["JWT:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(key)
-                };
-            });
+                    x.Authority = "http://localhost:5000";
+                    x.RequireHttpsMetadata = false;
+                    x.ApiName = "AirlineService";
+                });
+            //    .AddJwtBearer("AuthorizationKey", x =>
+            //{
+            //    x.Authority = "http://localhost:5000/";
+            //    x.RequireHttpsMetadata = false;
+            //    x.TokenValidationParameters = new TokenValidationParameters
+            //    {
+            //        ValidateAudience = false
+            //    };
+
+            //});/*.AddOpenIdConnect();*/
             services.AddMassTransit(x =>
             {
                 x.AddConsumer<AirlineRequestConsumer>();

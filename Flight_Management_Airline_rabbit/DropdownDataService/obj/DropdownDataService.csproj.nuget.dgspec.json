@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\DropdownDataService\\DropdownDataService.csproj": {}
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\DropdownDataService\\DropdownDataService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj",
+        "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\obj\\",
+        "outputPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -90,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\DropdownDataService\\DropdownDataService.csproj": {
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\DropdownDataService\\DropdownDataService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\DropdownDataService\\DropdownDataService.csproj",
+        "projectUniqueName": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\DropdownDataService\\DropdownDataService.csproj",
         "projectName": "DropdownDataService",
-        "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\DropdownDataService\\DropdownDataService.csproj",
+        "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\DropdownDataService\\DropdownDataService.csproj",
         "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\DropdownDataService\\obj\\",
+        "outputPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\DropdownDataService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -120,8 +120,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
+              "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
+                "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
               }
             }
           }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj": {}
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj": {
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj",
+        "projectUniqueName": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj",
         "projectName": "AirlineConsumer.Microservice",
-        "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj",
+        "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj",
         "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\obj\\",
+        "outputPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
+              "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
+                "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
               }
             }
           }
@@ -107,14 +107,14 @@
         }
       }
     },
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj",
+        "projectUniqueName": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj",
         "projectName": "Common",
-        "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj",
+        "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj",
         "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\obj\\",
+        "outputPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -193,14 +193,14 @@
         }
       }
     },
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj": {
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj",
+        "projectUniqueName": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj",
         "projectName": "AirlineService",
-        "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj",
+        "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj",
         "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\FlightManagement\\obj\\",
+        "outputPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\FlightManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -223,11 +223,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj": {
-                "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj"
+              "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj": {
+                "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\AirlineConsumer.Microservice\\AirlineConsumer.Microservice.csproj"
               },
-              "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
-                "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
+              "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj": {
+                "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\Common\\Common.csproj"
               }
             }
           }
@@ -242,6 +242,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "IdentityServer4.AccessTokenValidation": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
             "MassTransit": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -259,6 +263,10 @@
               "version": "[7.0.3, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
               "version": "[3.1.26, )"
             },

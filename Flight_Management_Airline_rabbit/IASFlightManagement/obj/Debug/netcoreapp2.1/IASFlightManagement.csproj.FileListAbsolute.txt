@@ -1,0 +1,16 @@
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\bin\Debug\netcoreapp2.1\IASFlightManagement.deps.json
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\bin\Debug\netcoreapp2.1\IASFlightManagement.runtimeconfig.json
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\bin\Debug\netcoreapp2.1\IASFlightManagement.runtimeconfig.dev.json
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\bin\Debug\netcoreapp2.1\IASFlightManagement.dll
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\bin\Debug\netcoreapp2.1\IASFlightManagement.pdb
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.AssemblyInfoInputs.cache
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.AssemblyInfo.cs
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.csproj.CoreCompileInputs.cache
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.RazorAssemblyInfo.cache
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.RazorAssemblyInfo.cs
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.RazorTargetAssemblyInfo.cache
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.dll
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.pdb
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.genruntimeconfig.cache
+D:\Project backup\Flight management with IAS\Flight_Management_Airline_rabbit\IASFlightManagement\obj\Debug\netcoreapp2.1\IASFlightManagement.csproj.AssemblyReference.cache

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj": {}
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj": {
+    "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj",
+        "projectUniqueName": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj",
         "projectName": "APIGateway",
-        "projectPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj",
+        "projectPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\APIGateway\\APIGateway.csproj",
         "packagesPath": "C:\\Users\\cogdotnet929\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cogdotnet929\\source\\repos\\Git commit\\Flight_Management_Airline_rabbit\\APIGateway\\obj\\",
+        "outputPath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\APIGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -46,6 +46,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.26, )"
+            },
             "Ocelot": {
               "target": "Package",
               "version": "[16.0.1, )"
