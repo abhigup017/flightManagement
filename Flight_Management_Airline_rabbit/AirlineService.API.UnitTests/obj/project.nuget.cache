@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0Gp7eASXuOMn2SD1JVgOFL+phAJg5vI0vFWA6bThVfVQ+6wjFrwMOFn0WyDwexlPc1Ke7JJSWncQqaTspSSLTg==",
+  "dgSpecHash": "AaRZeaaq0TGhmJZSZQoSj20JB9pRwzqx37NR90eXIBpeQK51P0vpCYoH5mMTBTu1viz40BPgtOHtF1n86m2UTQ==",
   "success": true,
-  "projectFilePath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\AirlineService.API.UnitTests.csproj",
+  "projectFilePath": "C:\\Users\\cogdotnet929\\source\\repos\\Git Commit Dot Net IAS4\\Flight_Management_Airline_rabbit\\AirlineService.API.UnitTests\\AirlineService.API.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\automatonymous\\5.0.1\\automatonymous.5.0.1.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\confluent.kafka\\1.5.0\\confluent.kafka.1.5.0.nupkg.sha512",
@@ -21,7 +21,6 @@
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.26\\microsoft.aspnetcore.authentication.jwtbearer.3.1.26.nupkg.sha512",
-    "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.26\\microsoft.aspnetcore.authentication.openidconnect.3.1.26.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",

@@ -1,0 +1,627 @@
+2022-07-21 19:24:15.031 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-21 19:24:15.106 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-21 19:24:15.123 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-21 19:24:15.125 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-21 19:24:15.128 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-21 19:24:15.128 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-21 19:24:15.129 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-21 19:24:15.129 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-21 19:25:15.207 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-21 19:25:15.453 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-21 19:25:15.537 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-21 19:25:15.647 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-21 19:25:15.692 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-21 19:25:15.730 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-21 19:25:15.751 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-21 19:25:15.768 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-21 19:26:47.480 +05:30 [DBG] Login Url: /Account/Login
+2022-07-21 19:26:47.488 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-21 19:26:47.499 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-21 19:26:47.500 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-21 19:26:47.501 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-21 19:26:47.502 +05:30 [DBG] Error Url: /home/error
+2022-07-21 19:26:47.503 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-21 19:26:47.595 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:26:47.611 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:26:47.626 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:26:47.652 +05:30 [DBG] Start token request.
+2022-07-21 19:26:47.667 +05:30 [DBG] Start client validation
+2022-07-21 19:26:47.677 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:26:47.686 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:26:47.742 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:26:47.742 +05:30 [DBG] Secret id found: User
+2022-07-21 19:26:47.766 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-21 19:26:47.807 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:26:47.808 +05:30 [DBG] Client validation success
+2022-07-21 19:26:47.830 +05:30 [DBG] Start token request validation
+2022-07-21 19:26:47.842 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:26:47.885 +05:30 [DBG] User credentials token request validation success
+2022-07-21 19:26:47.912 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:26:48.010 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-21 19:26:48.151 +05:30 [DBG] Token request success.
+2022-07-21 19:26:52.076 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:26:52.095 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:26:52.112 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:26:52.133 +05:30 [DBG] Start token request.
+2022-07-21 19:26:52.134 +05:30 [DBG] Start client validation
+2022-07-21 19:26:52.134 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:26:52.135 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:26:52.137 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:26:52.138 +05:30 [DBG] Secret id found: User
+2022-07-21 19:26:52.139 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-21 19:26:52.140 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:26:52.140 +05:30 [DBG] Client validation success
+2022-07-21 19:26:52.141 +05:30 [DBG] Start token request validation
+2022-07-21 19:26:52.141 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:26:52.142 +05:30 [DBG] User credentials token request validation success
+2022-07-21 19:26:52.143 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:26:52.145 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-21 19:26:52.149 +05:30 [DBG] Token request success.
+2022-07-21 19:27:04.723 +05:30 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://jwt.io
+2022-07-21 19:27:04.732 +05:30 [DBG] Client list checked and origin: https://jwt.io is not allowed
+2022-07-21 19:27:04.735 +05:30 [WRN] CorsPolicyService did not allow origin: https://jwt.io
+2022-07-21 19:27:04.743 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:27:04.746 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:27:04.747 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:27:04.759 +05:30 [DBG] Start discovery request
+2022-07-21 19:27:13.714 +05:30 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://jwt.io
+2022-07-21 19:27:13.716 +05:30 [DBG] Client list checked and origin: https://jwt.io is not allowed
+2022-07-21 19:27:13.717 +05:30 [WRN] CorsPolicyService did not allow origin: https://jwt.io
+2022-07-21 19:27:13.718 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:27:13.719 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:27:13.720 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:27:13.721 +05:30 [DBG] Start discovery request
+2022-07-21 19:27:17.488 +05:30 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://jwt.io
+2022-07-21 19:27:17.490 +05:30 [DBG] Client list checked and origin: https://jwt.io is not allowed
+2022-07-21 19:27:17.491 +05:30 [WRN] CorsPolicyService did not allow origin: https://jwt.io
+2022-07-21 19:27:17.492 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:27:17.494 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:27:17.501 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:27:17.524 +05:30 [DBG] Start discovery request
+2022-07-21 19:27:58.785 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:27:58.787 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:27:58.788 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:27:58.789 +05:30 [DBG] Start discovery request
+2022-07-21 19:27:58.904 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-21 19:27:58.908 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-21 19:27:58.946 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-21 19:27:58.972 +05:30 [DBG] Start key discovery request
+2022-07-21 19:28:29.047 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:28:29.049 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:28:29.058 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:28:29.060 +05:30 [DBG] Start token request.
+2022-07-21 19:28:29.060 +05:30 [DBG] Start client validation
+2022-07-21 19:28:29.060 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:28:29.061 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:28:29.062 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:28:29.062 +05:30 [DBG] Secret id found: Admin
+2022-07-21 19:28:29.063 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-21 19:28:29.063 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:28:29.064 +05:30 [DBG] Client validation success
+2022-07-21 19:28:29.064 +05:30 [DBG] Start token request validation
+2022-07-21 19:28:29.064 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:28:29.065 +05:30 [DBG] Admin credentials token request validation success
+2022-07-21 19:28:29.065 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:28:29.088 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-21 19:28:29.094 +05:30 [DBG] Token request success.
+2022-07-21 19:28:42.565 +05:30 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://jwt.io
+2022-07-21 19:28:42.567 +05:30 [DBG] Client list checked and origin: https://jwt.io is not allowed
+2022-07-21 19:28:42.567 +05:30 [WRN] CorsPolicyService did not allow origin: https://jwt.io
+2022-07-21 19:28:42.568 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:28:42.569 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:28:42.570 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:28:42.576 +05:30 [DBG] Start discovery request
+2022-07-21 19:30:25.593 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-21 19:30:25.743 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-21 19:30:25.792 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-21 19:30:25.798 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-21 19:30:25.800 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-21 19:30:25.800 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-21 19:30:25.801 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-21 19:30:25.801 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-21 19:31:00.487 +05:30 [DBG] Login Url: /Account/Login
+2022-07-21 19:31:00.492 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-21 19:31:00.492 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-21 19:31:00.493 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-21 19:31:00.493 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-21 19:31:00.494 +05:30 [DBG] Error Url: /home/error
+2022-07-21 19:31:00.495 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-21 19:31:00.571 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:31:00.577 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:31:00.578 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:31:00.583 +05:30 [DBG] Start discovery request
+2022-07-21 19:31:00.863 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-21 19:31:00.893 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-21 19:31:00.893 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-21 19:31:00.899 +05:30 [DBG] Start key discovery request
+2022-07-21 19:31:23.086 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:31:23.119 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:31:23.119 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:31:23.130 +05:30 [DBG] Start token request.
+2022-07-21 19:31:23.138 +05:30 [DBG] Start client validation
+2022-07-21 19:31:23.145 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:31:23.151 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:31:23.174 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:31:23.175 +05:30 [DBG] Secret id found: Admin
+2022-07-21 19:31:23.205 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-21 19:31:23.229 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:31:23.231 +05:30 [DBG] Client validation success
+2022-07-21 19:31:23.256 +05:30 [DBG] Start token request validation
+2022-07-21 19:31:23.267 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:31:23.303 +05:30 [DBG] Admin credentials token request validation success
+2022-07-21 19:31:23.323 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:31:23.399 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-21 19:31:23.547 +05:30 [DBG] Token request success.
+2022-07-21 19:32:01.823 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:32:01.828 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:32:01.831 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:32:01.833 +05:30 [DBG] Start token request.
+2022-07-21 19:32:01.838 +05:30 [DBG] Start client validation
+2022-07-21 19:32:01.838 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:32:01.838 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:32:01.839 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:32:01.840 +05:30 [DBG] Secret id found: user
+2022-07-21 19:32:01.840 +05:30 [ERR] No client with id 'user' found. aborting
+2022-07-21 19:32:15.644 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:32:15.658 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:32:15.665 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:32:15.667 +05:30 [DBG] Start token request.
+2022-07-21 19:32:15.667 +05:30 [DBG] Start client validation
+2022-07-21 19:32:15.668 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:32:15.669 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:32:15.670 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:32:15.671 +05:30 [DBG] Secret id found: User
+2022-07-21 19:32:15.671 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-21 19:32:15.673 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:32:15.673 +05:30 [DBG] Client validation success
+2022-07-21 19:32:15.674 +05:30 [DBG] Start token request validation
+2022-07-21 19:32:15.675 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:32:15.676 +05:30 [DBG] User credentials token request validation success
+2022-07-21 19:32:15.677 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:32:15.689 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-21 19:32:15.696 +05:30 [DBG] Token request success.
+2022-07-21 19:32:17.585 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:32:17.586 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:32:17.587 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:32:17.588 +05:30 [DBG] Start token request.
+2022-07-21 19:32:17.588 +05:30 [DBG] Start client validation
+2022-07-21 19:32:17.589 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:32:17.589 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:32:17.590 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:32:17.590 +05:30 [DBG] Secret id found: User
+2022-07-21 19:32:17.590 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-21 19:32:17.592 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:32:17.592 +05:30 [DBG] Client validation success
+2022-07-21 19:32:17.593 +05:30 [DBG] Start token request validation
+2022-07-21 19:32:17.593 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:32:17.594 +05:30 [DBG] User credentials token request validation success
+2022-07-21 19:32:17.594 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:32:17.601 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-21 19:32:17.605 +05:30 [DBG] Token request success.
+2022-07-21 19:34:19.895 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:34:19.899 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:34:19.900 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:34:19.902 +05:30 [DBG] Start token request.
+2022-07-21 19:34:19.903 +05:30 [DBG] Start client validation
+2022-07-21 19:34:19.904 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:34:19.905 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:34:19.906 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:34:19.908 +05:30 [DBG] Secret id found: User
+2022-07-21 19:34:19.915 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-21 19:34:19.921 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:34:19.922 +05:30 [DBG] Client validation success
+2022-07-21 19:34:19.923 +05:30 [DBG] Start token request validation
+2022-07-21 19:34:19.923 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:34:19.931 +05:30 [DBG] User credentials token request validation success
+2022-07-21 19:34:19.932 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:34:19.935 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-21 19:34:19.942 +05:30 [DBG] Token request success.
+2022-07-21 19:35:09.270 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:35:09.279 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:35:09.280 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:35:09.281 +05:30 [DBG] Start discovery request
+2022-07-21 19:35:09.463 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-21 19:35:09.468 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-21 19:35:09.470 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-21 19:35:09.472 +05:30 [DBG] Start key discovery request
+2022-07-21 19:36:19.162 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:36:19.164 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:36:19.165 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:36:19.166 +05:30 [DBG] Start token request.
+2022-07-21 19:36:19.166 +05:30 [DBG] Start client validation
+2022-07-21 19:36:19.168 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:36:19.169 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:36:19.170 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:36:19.171 +05:30 [DBG] Secret id found: User
+2022-07-21 19:36:19.171 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-21 19:36:19.172 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:36:19.172 +05:30 [DBG] Client validation success
+2022-07-21 19:36:19.173 +05:30 [DBG] Start token request validation
+2022-07-21 19:36:19.174 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:36:19.174 +05:30 [DBG] User credentials token request validation success
+2022-07-21 19:36:19.175 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:36:19.177 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-21 19:36:19.182 +05:30 [DBG] Token request success.
+2022-07-21 19:36:32.237 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:36:32.239 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:36:32.240 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:36:32.241 +05:30 [DBG] Start token request.
+2022-07-21 19:36:32.242 +05:30 [DBG] Start client validation
+2022-07-21 19:36:32.243 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:36:32.248 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:36:32.254 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:36:32.254 +05:30 [DBG] Secret id found: Admin
+2022-07-21 19:36:32.255 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-21 19:36:32.256 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:36:32.256 +05:30 [DBG] Client validation success
+2022-07-21 19:36:32.256 +05:30 [DBG] Start token request validation
+2022-07-21 19:36:32.257 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:36:32.257 +05:30 [DBG] Admin credentials token request validation success
+2022-07-21 19:36:32.258 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:36:32.264 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-21 19:36:32.270 +05:30 [DBG] Token request success.
+2022-07-21 19:37:05.196 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:37:05.197 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:37:05.198 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:37:05.198 +05:30 [DBG] Start discovery request
+2022-07-21 19:37:05.364 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-21 19:37:05.366 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-21 19:37:05.367 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-21 19:37:05.368 +05:30 [DBG] Start key discovery request
+2022-07-21 19:39:43.972 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-21 19:39:44.111 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-21 19:39:44.140 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-21 19:39:44.169 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-21 19:39:44.174 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-21 19:39:44.179 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-21 19:39:44.181 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-21 19:39:44.184 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-21 19:41:19.213 +05:30 [DBG] Login Url: /Account/Login
+2022-07-21 19:41:19.218 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-21 19:41:19.218 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-21 19:41:19.219 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-21 19:41:19.220 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-21 19:41:19.220 +05:30 [DBG] Error Url: /home/error
+2022-07-21 19:41:19.221 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-21 19:41:19.285 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-21 19:41:19.313 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-21 19:41:19.314 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-21 19:41:19.319 +05:30 [DBG] Start discovery request
+2022-07-21 19:41:19.659 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-21 19:41:19.679 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-21 19:41:19.685 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-21 19:41:19.695 +05:30 [DBG] Start key discovery request
+2022-07-21 19:41:45.752 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-21 19:41:45.764 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-21 19:41:45.766 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-21 19:41:45.776 +05:30 [DBG] Start token request.
+2022-07-21 19:41:45.784 +05:30 [DBG] Start client validation
+2022-07-21 19:41:45.792 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-21 19:41:45.803 +05:30 [DBG] Start parsing for secret in post body
+2022-07-21 19:41:45.827 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-21 19:41:45.828 +05:30 [DBG] Secret id found: User
+2022-07-21 19:41:45.859 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-21 19:41:45.883 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-21 19:41:45.884 +05:30 [DBG] Client validation success
+2022-07-21 19:41:45.905 +05:30 [DBG] Start token request validation
+2022-07-21 19:41:45.915 +05:30 [DBG] Start client credentials token request validation
+2022-07-21 19:41:45.964 +05:30 [DBG] User credentials token request validation success
+2022-07-21 19:41:45.980 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-21 19:41:46.065 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-21 19:41:46.203 +05:30 [DBG] Token request success.
+2022-07-22 00:52:59.043 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 00:52:59.196 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 00:52:59.224 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 00:52:59.241 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 00:52:59.268 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 00:52:59.277 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 00:52:59.300 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 00:52:59.303 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 00:54:25.618 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 00:54:25.644 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 00:54:25.647 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 00:54:25.721 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 00:54:25.722 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 00:54:25.724 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 00:54:25.726 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 00:54:25.726 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 00:54:25.727 +05:30 [DBG] Error Url: /home/error
+2022-07-22 00:54:25.728 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 00:54:25.822 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 00:54:25.845 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 00:54:25.847 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 00:54:25.856 +05:30 [WRN] Invalid HTTP request for token endpoint
+2022-07-22 00:59:32.224 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 00:59:32.312 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 00:59:32.330 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 00:59:32.470 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 00:59:32.472 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 00:59:32.485 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 00:59:32.547 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 00:59:32.548 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 01:00:40.257 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 01:00:40.284 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 01:00:40.292 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 01:00:40.339 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 01:00:40.340 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 01:00:40.343 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 01:00:40.343 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 01:00:40.344 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 01:00:40.349 +05:30 [DBG] Error Url: /home/error
+2022-07-22 01:00:40.356 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 01:00:40.440 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:00:40.475 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:00:40.485 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:00:40.501 +05:30 [DBG] Start token request.
+2022-07-22 01:00:40.513 +05:30 [DBG] Start client validation
+2022-07-22 01:00:40.528 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:00:40.534 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:00:40.568 +05:30 [DBG] No secret in post body found
+2022-07-22 01:00:40.569 +05:30 [DBG] Parser found no secret
+2022-07-22 01:00:40.582 +05:30 [ERR] No client identifier found
+2022-07-22 01:02:49.842 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:02:49.854 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:02:49.855 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:02:49.857 +05:30 [DBG] Start token request.
+2022-07-22 01:02:49.857 +05:30 [DBG] Start client validation
+2022-07-22 01:02:49.858 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:02:49.859 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:02:49.890 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 01:02:49.893 +05:30 [DBG] Secret id found: Admin
+2022-07-22 01:02:49.929 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-22 01:02:49.946 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-22 01:02:49.946 +05:30 [DBG] Client validation success
+2022-07-22 01:02:49.964 +05:30 [DBG] Start token request validation
+2022-07-22 01:02:49.978 +05:30 [DBG] Start client credentials token request validation
+2022-07-22 01:02:50.039 +05:30 [DBG] Admin credentials token request validation success
+2022-07-22 01:02:50.060 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-22 01:02:50.142 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-22 01:02:50.344 +05:30 [DBG] Token request success.
+2022-07-22 01:04:09.595 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 01:04:09.598 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 01:04:09.632 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 01:04:09.646 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:04:09.649 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:04:09.658 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:04:09.660 +05:30 [DBG] Start token request.
+2022-07-22 01:04:09.661 +05:30 [DBG] Start client validation
+2022-07-22 01:04:09.662 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:04:09.663 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:04:09.664 +05:30 [DBG] No secret in post body found
+2022-07-22 01:04:09.667 +05:30 [DBG] Parser found no secret
+2022-07-22 01:04:09.674 +05:30 [ERR] No client identifier found
+2022-07-22 01:04:28.379 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:04:28.382 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:04:28.384 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:04:28.387 +05:30 [DBG] Start token request.
+2022-07-22 01:04:28.391 +05:30 [DBG] Start client validation
+2022-07-22 01:04:28.391 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:04:28.392 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:04:28.394 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 01:04:28.394 +05:30 [DBG] Secret id found: Adminn
+2022-07-22 01:04:28.395 +05:30 [ERR] No client with id 'Adminn' found. aborting
+2022-07-22 01:04:36.477 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:04:36.480 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:04:36.481 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:04:36.483 +05:30 [DBG] Start token request.
+2022-07-22 01:04:36.484 +05:30 [DBG] Start client validation
+2022-07-22 01:04:36.485 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:04:36.486 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:04:36.497 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 01:04:36.498 +05:30 [DBG] Secret id found: Admin
+2022-07-22 01:04:36.500 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-22 01:04:36.501 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-22 01:04:36.503 +05:30 [DBG] Client validation success
+2022-07-22 01:04:36.508 +05:30 [DBG] Start token request validation
+2022-07-22 01:04:36.509 +05:30 [DBG] Start client credentials token request validation
+2022-07-22 01:04:36.510 +05:30 [DBG] Admin credentials token request validation success
+2022-07-22 01:04:36.510 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-22 01:04:36.514 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-22 01:04:36.519 +05:30 [DBG] Token request success.
+2022-07-22 01:07:18.169 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 01:07:18.189 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 01:07:18.214 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 01:07:18.215 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:07:18.216 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:07:18.220 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:07:18.224 +05:30 [DBG] Start token request.
+2022-07-22 01:07:18.225 +05:30 [DBG] Start client validation
+2022-07-22 01:07:18.225 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:07:18.226 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:07:18.227 +05:30 [DBG] No secret in post body found
+2022-07-22 01:07:18.229 +05:30 [DBG] Parser found no secret
+2022-07-22 01:07:18.230 +05:30 [ERR] No client identifier found
+2022-07-22 01:07:54.324 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 01:07:54.327 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 01:07:54.329 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 01:07:54.333 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:07:54.337 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:07:54.338 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:07:54.339 +05:30 [DBG] Start token request.
+2022-07-22 01:07:54.340 +05:30 [DBG] Start client validation
+2022-07-22 01:07:54.341 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:07:54.341 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:07:54.344 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 01:07:54.345 +05:30 [DBG] Secret id found: Admin
+2022-07-22 01:07:54.348 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-22 01:07:54.355 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-22 01:07:54.356 +05:30 [DBG] Client validation success
+2022-07-22 01:07:54.356 +05:30 [DBG] Start token request validation
+2022-07-22 01:07:54.357 +05:30 [DBG] Start client credentials token request validation
+2022-07-22 01:07:54.358 +05:30 [DBG] Admin credentials token request validation success
+2022-07-22 01:07:54.359 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-22 01:07:54.364 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-22 01:07:54.370 +05:30 [DBG] Token request success.
+2022-07-22 01:14:10.396 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 01:14:10.401 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 01:14:10.402 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 01:14:10.403 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:14:10.408 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:14:10.410 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:14:10.411 +05:30 [DBG] Start token request.
+2022-07-22 01:14:10.414 +05:30 [DBG] Start client validation
+2022-07-22 01:14:10.422 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:14:10.427 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:14:10.428 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 01:14:10.429 +05:30 [DBG] Secret id found: User
+2022-07-22 01:14:10.430 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-22 01:14:10.433 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-22 01:14:10.433 +05:30 [DBG] Client validation success
+2022-07-22 01:14:10.434 +05:30 [DBG] Start token request validation
+2022-07-22 01:14:10.438 +05:30 [DBG] Start client credentials token request validation
+2022-07-22 01:14:10.444 +05:30 [DBG] User credentials token request validation success
+2022-07-22 01:14:10.445 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-22 01:14:10.450 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-22 01:14:10.455 +05:30 [DBG] Token request success.
+2022-07-22 01:14:44.884 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 01:14:44.888 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 01:14:44.890 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 01:14:44.891 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:14:44.892 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:14:44.893 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:14:44.900 +05:30 [DBG] Start token request.
+2022-07-22 01:14:44.901 +05:30 [DBG] Start client validation
+2022-07-22 01:14:44.901 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:14:44.903 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:14:44.905 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 01:14:44.906 +05:30 [DBG] Secret id found: Admin
+2022-07-22 01:14:44.906 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-22 01:14:44.908 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-22 01:14:44.909 +05:30 [DBG] Client validation success
+2022-07-22 01:14:44.909 +05:30 [DBG] Start token request validation
+2022-07-22 01:14:44.912 +05:30 [DBG] Start client credentials token request validation
+2022-07-22 01:14:44.916 +05:30 [DBG] Admin credentials token request validation success
+2022-07-22 01:14:44.917 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-22 01:14:44.921 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-22 01:14:44.929 +05:30 [DBG] Token request success.
+2022-07-22 01:19:59.907 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 01:19:59.920 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 01:19:59.922 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 01:19:59.923 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:19:59.924 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:19:59.926 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:19:59.930 +05:30 [DBG] Start token request.
+2022-07-22 01:19:59.931 +05:30 [DBG] Start client validation
+2022-07-22 01:19:59.932 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:19:59.932 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:19:59.934 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 01:19:59.934 +05:30 [DBG] Secret id found: Admin
+2022-07-22 01:19:59.935 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-22 01:19:59.936 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-22 01:19:59.937 +05:30 [DBG] Client validation success
+2022-07-22 01:19:59.938 +05:30 [DBG] Start token request validation
+2022-07-22 01:19:59.939 +05:30 [DBG] Start client credentials token request validation
+2022-07-22 01:19:59.939 +05:30 [DBG] Admin credentials token request validation success
+2022-07-22 01:19:59.940 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-22 01:19:59.951 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-22 01:19:59.955 +05:30 [DBG] Token request success.
+2022-07-22 01:20:25.591 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-22 01:20:25.600 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-22 01:20:25.601 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-22 01:20:25.613 +05:30 [DBG] Start discovery request
+2022-07-22 01:20:25.827 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-22 01:20:25.833 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-22 01:20:25.835 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-22 01:20:25.842 +05:30 [DBG] Start key discovery request
+2022-07-22 01:21:11.593 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-22 01:21:11.595 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-22 01:21:11.597 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-22 01:21:11.598 +05:30 [DBG] Start discovery request
+2022-07-22 01:21:11.736 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-22 01:21:11.740 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-22 01:21:11.741 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-22 01:21:11.744 +05:30 [DBG] Start key discovery request
+2022-07-22 01:21:52.315 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-22 01:21:52.319 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-22 01:21:52.320 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-22 01:21:52.323 +05:30 [DBG] Start discovery request
+2022-07-22 01:21:52.473 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-22 01:21:52.476 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-22 01:21:52.477 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-22 01:21:52.478 +05:30 [DBG] Start key discovery request
+2022-07-22 01:22:42.958 +05:30 [DBG] CORS request made for path: /connect/token from origin: http://localhost:4200
+2022-07-22 01:22:42.962 +05:30 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2022-07-22 01:22:42.965 +05:30 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2022-07-22 01:22:42.970 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 01:22:42.972 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 01:22:42.973 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 01:22:42.974 +05:30 [DBG] Start token request.
+2022-07-22 01:22:42.975 +05:30 [DBG] Start client validation
+2022-07-22 01:22:42.976 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 01:22:42.977 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 01:22:42.978 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 01:22:42.979 +05:30 [DBG] Secret id found: User
+2022-07-22 01:22:42.979 +05:30 [DBG] client configuration validation for client User succeeded.
+2022-07-22 01:22:42.989 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-22 01:22:42.990 +05:30 [DBG] Client validation success
+2022-07-22 01:22:42.991 +05:30 [DBG] Start token request validation
+2022-07-22 01:22:42.992 +05:30 [DBG] Start client credentials token request validation
+2022-07-22 01:22:42.993 +05:30 [DBG] User credentials token request validation success
+2022-07-22 01:22:42.994 +05:30 [INF] Token request validation success, {"ClientId":"User","ClientName":null,"GrantType":"client_credentials","Scopes":"BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"User","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-22 01:22:43.004 +05:30 [DBG] Getting claims for access token for client: User
+2022-07-22 01:22:43.008 +05:30 [DBG] Token request success.
+2022-07-22 01:23:10.292 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-22 01:23:10.297 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-22 01:23:10.305 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-22 01:23:10.307 +05:30 [DBG] Start discovery request
+2022-07-22 01:23:10.452 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-22 01:23:10.464 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-22 01:23:10.465 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-22 01:23:10.470 +05:30 [DBG] Start key discovery request
+2022-07-22 01:25:06.775 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-22 01:25:06.780 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-22 01:25:06.793 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-22 01:25:06.794 +05:30 [DBG] Start discovery request
+2022-07-22 01:25:06.956 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-22 01:25:06.959 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-22 01:25:06.961 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-22 01:25:06.963 +05:30 [DBG] Start key discovery request
+2022-07-22 01:26:54.572 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-22 01:26:54.576 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-22 01:26:54.578 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-22 01:26:54.580 +05:30 [DBG] Start discovery request
+2022-07-22 01:26:54.755 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-22 01:26:54.759 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-22 01:26:54.764 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-22 01:26:54.766 +05:30 [DBG] Start key discovery request
+2022-07-22 10:16:28.286 +05:30 [INF] Starting IdentityServer4 version 2.5.0.0
+2022-07-22 10:16:28.416 +05:30 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2022-07-22 10:16:28.473 +05:30 [INF] Using the default authentication scheme idsrv for IdentityServer
+2022-07-22 10:16:28.474 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2022-07-22 10:16:28.474 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2022-07-22 10:16:28.475 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2022-07-22 10:16:28.475 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2022-07-22 10:16:28.475 +05:30 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2022-07-22 10:17:06.271 +05:30 [DBG] Login Url: /Account/Login
+2022-07-22 10:17:06.275 +05:30 [DBG] Login Return Url Parameter: ReturnUrl
+2022-07-22 10:17:06.278 +05:30 [DBG] Logout Url: /Account/Logout
+2022-07-22 10:17:06.278 +05:30 [DBG] ConsentUrl Url: /consent
+2022-07-22 10:17:06.279 +05:30 [DBG] Consent Return Url Parameter: returnUrl
+2022-07-22 10:17:06.280 +05:30 [DBG] Error Url: /home/error
+2022-07-22 10:17:06.280 +05:30 [DBG] Error Id Parameter: errorId
+2022-07-22 10:17:06.351 +05:30 [DBG] Request path /connect/token matched to endpoint type Token
+2022-07-22 10:17:06.367 +05:30 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2022-07-22 10:17:06.368 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2022-07-22 10:17:06.380 +05:30 [DBG] Start token request.
+2022-07-22 10:17:06.392 +05:30 [DBG] Start client validation
+2022-07-22 10:17:06.402 +05:30 [DBG] Start parsing Basic Authentication secret
+2022-07-22 10:17:06.407 +05:30 [DBG] Start parsing for secret in post body
+2022-07-22 10:17:06.468 +05:30 [DBG] Parser found secret: PostBodySecretParser
+2022-07-22 10:17:06.468 +05:30 [DBG] Secret id found: Admin
+2022-07-22 10:17:06.496 +05:30 [DBG] client configuration validation for client Admin succeeded.
+2022-07-22 10:17:06.509 +05:30 [DBG] Secret validator success: HashedSharedSecretValidator
+2022-07-22 10:17:06.510 +05:30 [DBG] Client validation success
+2022-07-22 10:17:06.527 +05:30 [DBG] Start token request validation
+2022-07-22 10:17:06.537 +05:30 [DBG] Start client credentials token request validation
+2022-07-22 10:17:06.583 +05:30 [DBG] Admin credentials token request validation success
+2022-07-22 10:17:06.600 +05:30 [INF] Token request validation success, {"ClientId":"Admin","ClientName":null,"GrantType":"client_credentials","Scopes":"AirlineService BlobService BookingService DiscountService DropdownService SearchService TicketService","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","client_id":"Admin","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2022-07-22 10:17:06.677 +05:30 [DBG] Getting claims for access token for client: Admin
+2022-07-22 10:17:06.823 +05:30 [DBG] Token request success.
+2022-07-22 10:17:32.705 +05:30 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2022-07-22 10:17:32.719 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2022-07-22 10:17:32.721 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2022-07-22 10:17:32.728 +05:30 [DBG] Start discovery request
+2022-07-22 10:17:32.910 +05:30 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2022-07-22 10:17:32.914 +05:30 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2022-07-22 10:17:32.915 +05:30 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2022-07-22 10:17:32.921 +05:30 [DBG] Start key discovery request

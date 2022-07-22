@@ -184,6 +184,105 @@ namespace BookingService.Services
             return isCancelled;
         }
         #endregion
+
+        #region Get All Booked Tickets
+        /// <summary>
+        /// Searches for all booked tickets in the system
+        /// </summary>
+        /// <param name="bookedTicketsSearchRequest"></param>
+        /// <returns>List of all booked tickets</returns>
+        public List<BookedTicketsHistory> GetAllBookedTickets(BookedTicketsSearchRequest bookedTicketsSearchRequest)
+        {
+            List<BookedTicketsHistory> bookedTicketsHistories = new List<BookedTicketsHistory>();
+            try
+            {
+                bookedTicketsHistories = (from bookings in _dbContext.Bookings
+                            join schedule in _dbContext.Flightschedules
+                            on bookings.FlightId equals schedule.FlightId
+                            join airline in _dbContext.Airlines
+                            on schedule.AirLineId equals airline.AirLineId
+                            join mealPlan in _dbContext.Mealplans
+                            on bookings.MealPlanId equals mealPlan.MealPlanId
+                            join scheduleDay in _dbContext.Flightdaysschedules
+                            on schedule.FlightDayScheduleId equals scheduleDay.FlightDayScheduleId
+                            join sourceLocation in _dbContext.Locations
+                            on scheduleDay.SourceLocationId equals sourceLocation.LocationId
+                            join destinationLocation in _dbContext.Locations
+                            on scheduleDay.DestinationLocationId equals destinationLocation.LocationId
+                            select new BookedTicketsHistory
+                            {
+                                AirlineLogo = airline.AirlineLogo,
+                                AirlineId = airline.AirLineId,
+                                AirlineName = airline.AirlineName,
+                                FlightNumber = schedule.FlightNumber,
+                                TotalCost = bookings.TotalCost,
+                                TravellingDate = bookings.TravelDate,
+                                BookingId = bookings.BookingId,
+                                PnrNumber = bookings.Pnrnumber,
+                                IsCancelled = (bool)bookings.IsCancelled,
+                                IsCancellationAllowed = (bool)bookings.IsCancelled ? false : Convert.ToInt32(bookings.TravelDate.Subtract(DateTime.Now).TotalHours) > 24 ? true : false,
+                                CustomerName = bookings.CustomerName,
+                                CustomerEmailId = bookings.CustomerEmailId,
+                                NoOfSeats = bookings.NoOfSeats,
+                                MealPlanId = bookings.MealPlanId,
+                                MealPlanType = mealPlan.MealPlanType,
+                                BookedOn = bookings.BookedOn,
+                                SourceLocation = sourceLocation.LocationName,
+                                SourceLocationId = sourceLocation.LocationId,
+                                DestinationLocation = destinationLocation.LocationName,
+                                DestinationLocationId = destinationLocation.LocationId
+                            }).OrderByDescending(x => x.TravellingDate).ToList();
+
+                if (bookedTicketsHistories != null && bookedTicketsHistories.Count > 0)
+                {
+                    if(bookedTicketsSearchRequest.AirlineId > 0)
+                    {
+                        bookedTicketsHistories = bookedTicketsHistories.Where(x => x.AirlineId == bookedTicketsSearchRequest.AirlineId).ToList();
+                    }
+                    if(bookedTicketsSearchRequest.SourceId > 0)
+                    {
+                        bookedTicketsHistories = bookedTicketsHistories.Where(x => x.SourceLocationId == bookedTicketsSearchRequest.SourceId).ToList();
+                    }
+                    if(bookedTicketsSearchRequest.DestinationId > 0)
+                    {
+                        bookedTicketsHistories = bookedTicketsHistories.Where(x => x.DestinationLocationId == bookedTicketsSearchRequest.DestinationId).ToList();
+                    }
+                    if(bookedTicketsSearchRequest.TravelDate != null)
+                    {
+                        DateTime TravelDate = (DateTime)bookedTicketsSearchRequest.TravelDate;
+                        bookedTicketsHistories = bookedTicketsHistories.Where(x => x.TravellingDate.Date == TravelDate.Date).ToList();
+                    }
+                    
+                    foreach (var booking in bookedTicketsHistories)
+                    {
+                        //booking.BookingPassengers = new List<BookingPassengers>();
+                        booking.BookingPassengers = (from passenger in _dbContext.Bookingpassengers
+                                                     join gender in _dbContext.Gendertypes
+                                                     on passenger.GenderId equals gender.GenderId
+                                                     where passenger.BookingId == booking.BookingId
+                                                     select new BookingPassengers
+                                                     {
+                                                         PassengerId = passenger.PassengerId,
+                                                         BookingId = passenger.BookingId,
+                                                         PassengerName = passenger.PassengerName,
+                                                         GenderId = passenger.GenderId,
+                                                         GenderType = gender.GenderValue,
+                                                         PassengerAge = passenger.PassengerAge,
+                                                         SeatNo = passenger.SeatNo,
+                                                         IsBusinessSeat = passenger.IsBusinessSeat,
+                                                         IsRegularSeat = passenger.IsRegularSeat
+                                                     }).ToList();
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+
+            return bookedTicketsHistories;
+        }
+        #endregion
     }
 }
 

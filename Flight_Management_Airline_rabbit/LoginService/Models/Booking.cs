@@ -18,7 +18,6 @@ namespace LoginService.Models
         public string CustomerEmailId { get; set; }
         public int NoOfSeats { get; set; }
         public int MealPlanId { get; set; }
-        public string SeatNumbers { get; set; }
         public string Pnrnumber { get; set; }
         public DateTime TravelDate { get; set; }
         public DateTime BookedOn { get; set; }

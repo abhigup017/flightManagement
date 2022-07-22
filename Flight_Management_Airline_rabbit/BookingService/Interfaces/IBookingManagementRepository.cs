@@ -12,5 +12,6 @@ namespace BookingService.Interfaces
         void BookFlightTickets(int flightId, FlightBookingRequest bookingRequest);
         List<BookedTicketsHistory> GetBookedTicketsHistory(string emailId);
         bool CancelBooking(string pnrNumber);
+        List<BookedTicketsHistory> GetAllBookedTickets(BookedTicketsSearchRequest bookedTicketsSearchRequest);
     }
 }

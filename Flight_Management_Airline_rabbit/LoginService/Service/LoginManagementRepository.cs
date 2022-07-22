@@ -58,7 +58,7 @@ namespace LoginService.Service
 
                 var token = tokenHandler.CreateToken(tokenDescriptor);
 
-                return new Token { token = tokenHandler.WriteToken(token), role = users[login.UserName.ToLower()] };
+                return new Token { role = users[login.UserName.ToLower()] };
             }
             catch(Exception ex)
             {

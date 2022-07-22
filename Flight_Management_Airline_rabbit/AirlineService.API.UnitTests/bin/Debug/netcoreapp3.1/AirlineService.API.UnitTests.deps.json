@@ -291,17 +291,6 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.26": {
-        "dependencies": {
-          "Microsoft.IdentityModel.Protocols.OpenIdConnect": "5.6.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll": {
-            "assemblyVersion": "3.1.26.0",
-            "fileVersion": "3.100.2622.27403"
-          }
-        }
-      },
       "Microsoft.AspNetCore.Authorization/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "6.0.1",
@@ -2338,7 +2327,6 @@
           "MassTransit.Kafka": "7.0.3",
           "MassTransit.RabbitMQ": "7.0.3",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.26",
-          "Microsoft.AspNetCore.Authentication.OpenIdConnect": "3.1.26",
           "Microsoft.AspNetCore.Mvc.Versioning": "5.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.17",
@@ -2490,13 +2478,6 @@
       "sha512": "sha512-WQVL31Sn5Zv/Rjnxnl7LZ3rLOzZkEE+/EpiTSePtB2ZXAVMl5CeWoIdhprgpAnrv6djQM7/CSJfg1F//Ct8ebA==",
       "path": "microsoft.aspnetcore.authentication.jwtbearer/3.1.26",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.3.1.26.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.Authentication.OpenIdConnect/3.1.26": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-14IosycXzqt9tHSW9oFImvZNHoqPrIJ1oQPSJmwjy+IciHSBfhMq9KRAMxABVTfXVzh8SBKzolboNj9YAgpseg==",
-      "path": "microsoft.aspnetcore.authentication.openidconnect/3.1.26",
-      "hashPath": "microsoft.aspnetcore.authentication.openidconnect.3.1.26.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authorization/2.2.0": {
       "type": "package",

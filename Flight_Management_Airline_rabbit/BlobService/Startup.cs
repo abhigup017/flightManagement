@@ -1,5 +1,6 @@
 using BlobService.Interface;
 using Common;
+using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,6 +37,13 @@ namespace BlobService
                 x.AssumeDefaultVersionWhenUnspecified = true;
                 x.ReportApiVersions = true;
             });
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                .AddIdentityServerAuthentication(x =>
+                {
+                    x.Authority = "http://localhost:5000";
+                    x.RequireHttpsMetadata = false;
+                    x.ApiName = "BlobService";
+                });
             services.AddConsulConfig(Configuration);
         }
 
@@ -53,6 +61,7 @@ namespace BlobService
             app.UseSwagger();
             app.UseSwaggerUI();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

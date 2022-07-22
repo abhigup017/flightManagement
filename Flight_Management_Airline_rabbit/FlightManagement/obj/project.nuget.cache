@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/cQZ/cT2T4lZVWcxZmTkvl2HvDzRVdbhtT7zmz0M92ITnvngdc1CctHH3Mn2/kBpFmjRFut7jzq2VeHYfLxkUg==",
+  "dgSpecHash": "FFun73cgu99FZVu8RgIqp+jU5YJ1lf6Kr2DLEqySzNpyIkuuuKLL/YOLf62hNqh6hW+rRZ9S/JyZJYeDTfatrA==",
   "success": true,
-  "projectFilePath": "D:\\Project backup\\Flight management with IAS\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj",
+  "projectFilePath": "C:\\Users\\cogdotnet929\\source\\repos\\Git Commit Dot Net IAS4\\Flight_Management_Airline_rabbit\\FlightManagement\\AirlineService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\automatonymous\\5.0.1\\automatonymous.5.0.1.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\confluent.kafka\\1.5.0\\confluent.kafka.1.5.0.nupkg.sha512",
@@ -19,7 +19,6 @@
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\masstransit.kafka\\7.0.3\\masstransit.kafka.7.0.3.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\masstransit.rabbitmq\\7.0.3\\masstransit.rabbitmq.7.0.3.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.26\\microsoft.aspnetcore.authentication.jwtbearer.3.1.26.nupkg.sha512",
-    "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\3.1.26\\microsoft.aspnetcore.authentication.openidconnect.3.1.26.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\cogdotnet929\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

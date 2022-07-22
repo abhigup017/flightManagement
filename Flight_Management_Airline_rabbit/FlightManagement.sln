@@ -37,7 +37,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiscountService", "Discount
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlobService", "BlobService\BlobService.csproj", "{D88F144B-E243-4872-83F0-F06F513CAE7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IASFlightManagement", "IASFlightManagement\IASFlightManagement.csproj", "{A3F05A08-3A7D-44C4-A6E2-4C0BF99FFC87}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IAS4", "IAS4\IAS4.csproj", "{D8A6E5DA-E480-48FD-A12E-B5FBE6BD1E6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,10 +113,10 @@ Global
 		{D88F144B-E243-4872-83F0-F06F513CAE7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D88F144B-E243-4872-83F0-F06F513CAE7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D88F144B-E243-4872-83F0-F06F513CAE7E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3F05A08-3A7D-44C4-A6E2-4C0BF99FFC87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3F05A08-3A7D-44C4-A6E2-4C0BF99FFC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3F05A08-3A7D-44C4-A6E2-4C0BF99FFC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3F05A08-3A7D-44C4-A6E2-4C0BF99FFC87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A6E5DA-E480-48FD-A12E-B5FBE6BD1E6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A6E5DA-E480-48FD-A12E-B5FBE6BD1E6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A6E5DA-E480-48FD-A12E-B5FBE6BD1E6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A6E5DA-E480-48FD-A12E-B5FBE6BD1E6C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

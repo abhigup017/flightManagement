@@ -1,0 +1,16 @@
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\bin\Debug\netcoreapp2.1\IAS4.deps.json
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\bin\Debug\netcoreapp2.1\IAS4.runtimeconfig.json
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\bin\Debug\netcoreapp2.1\IAS4.runtimeconfig.dev.json
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\bin\Debug\netcoreapp2.1\IAS4.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\bin\Debug\netcoreapp2.1\IAS4.pdb
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.csproj.AssemblyReference.cache
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.AssemblyInfoInputs.cache
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.AssemblyInfo.cs
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.csproj.CoreCompileInputs.cache
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.RazorAssemblyInfo.cache
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.RazorAssemblyInfo.cs
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.RazorTargetAssemblyInfo.cache
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.pdb
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Debug\netcoreapp2.1\IAS4.genruntimeconfig.cache

@@ -1,4 +1,5 @@
 ﻿using BookingService.Interfaces;
+using BookingService.ViewModels;
 using Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -67,6 +68,23 @@ namespace BookingService.Controllers
             {
                 var response = _bookingManagementRepository.CancelBooking(pnrNumber);
                 return Ok(new { isCancelled = response });
+            }
+            catch(Exception ex)
+            {
+                logger.LogInformation(ex.Message + "Stack Trace:" + ex.StackTrace);
+                return StatusCode(500, ex.Message);
+            }
+        }
+        #endregion
+
+        #region Get all Booked Tickets
+        [HttpPost, Route("history/all")]
+        public IActionResult GetAllBookedTickets(BookedTicketsSearchRequest bookedTicketsSearchRequest)
+        {
+            try
+            {
+                var bookedTicketsHistory = _bookingManagementRepository.GetAllBookedTickets(bookedTicketsSearchRequest);
+                return Ok(bookedTicketsHistory);
             }
             catch(Exception ex)
             {

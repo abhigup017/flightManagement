@@ -145,18 +145,15 @@ namespace BlobService.Service
                 MemoryStream ms = new MemoryStream();
                 //New document
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                string airlineLogo = "https://www.socialsamosa.com/wp-content/uploads/2014/05/spicejet-logo.png";
 
                 XFont font10 = new XFont("Verdana", 10, XFontStyle.Regular);
                 XFont font11 = new XFont("Verdana", 11, XFontStyle.Regular);
                 XFont font13 = new XFont("Verdana", 13, XFontStyle.Regular);
                 XFont font14 = new XFont("Verdana", 14, XFontStyle.Regular);
                 XFont font9 = new XFont("Verdana", 9, XFontStyle.Regular);
+                string cancellationStatus = bookingPdfRequest.IsCancelled ? "Cancelled" : "Not Cancelled";
                 //PageSize 
                 PdfDocument document = new PdfDocument();
-                bool secondPageExists = false;
-                decimal totalPages = 0;
-                int currentPage = 1;
                 List<int> vatValues = new List<int>();
                 PdfPage page = document.AddPage();
                 //page.Size = PageSize.A4;
@@ -184,22 +181,23 @@ namespace BlobService.Service
                 gfx.DrawString("Booked On:" + bookingPdfRequest.BookedOn.ToString("dd-MMM-yyyy HH:mm tt"), font14, XBrushes.Black, new XPoint(94.48, 400));
                 gfx.DrawString("Total Seats Booked: " + bookingPdfRequest.NoOfSeats, font14, XBrushes.Black, new XPoint(94.48, 425));
                 gfx.DrawString("Meal Preference: " + bookingPdfRequest.MealPlanType, font14, XBrushes.Black, new XPoint(94.48, 450));
+                gfx.DrawString("Cancellation Status: " + cancellationStatus, font14, XBrushes.Black, new XPoint(94.48, 475));
                 if (bookingPdfRequest.BookingPassengers != null && bookingPdfRequest.BookingPassengers.Count > 0)
                 {
-                    gfx.DrawString("Booking Passengers Details", new XFont("Verdana", 14, XFontStyle.Bold), XBrushes.Black, new XPoint(305, 500));
+                    gfx.DrawString("Booking Passengers Details", new XFont("Verdana", 14, XFontStyle.Bold), XBrushes.Black, new XPoint(305, 525));
 
-                gfx.DrawRectangle(new XSolidBrush((XColor.FromArgb(222, 222, 222))), new XRect(94.48, 550, 661.41, 30.39));
-                gfx.DrawString("Name", font14, XBrushes.Black, new XPoint(101, 572.13));
-                gfx.DrawString("Gender", font14, XBrushes.Black, new XPoint(220, 572.13));
-
-
-                gfx.DrawString("Age", font14, XBrushes.Black, new XPoint(344, 572.13));
+                gfx.DrawRectangle(new XSolidBrush((XColor.FromArgb(222, 222, 222))), new XRect(94.48, 575, 661.41, 30.39));
+                gfx.DrawString("Name", font14, XBrushes.Black, new XPoint(101, 597.13));
+                gfx.DrawString("Gender", font14, XBrushes.Black, new XPoint(220, 597.13));
 
 
-                gfx.DrawString("Seat No", font14, XBrushes.Black, new XPoint(460, 572.13));
-                gfx.DrawString("Seat Type", font14, XBrushes.Black, new XPoint(600, 572.13));
+                gfx.DrawString("Age", font14, XBrushes.Black, new XPoint(344, 597.13));
 
-                int currentYaxis = 602;
+
+                gfx.DrawString("Seat No", font14, XBrushes.Black, new XPoint(460, 597.13));
+                gfx.DrawString("Seat Type", font14, XBrushes.Black, new XPoint(600, 597.13));
+
+                int currentYaxis = 627;
                 
                     for (int i = 0; i < bookingPdfRequest.BookingPassengers.Count(); i++)
                     {
@@ -215,13 +213,17 @@ namespace BlobService.Service
 
                     }
 
-                    gfx.DrawString("Total Cost: Rs " + Math.Round(bookingPdfRequest.TotalCost,2).ToString(), new XFont("Verdana", 16, XFontStyle.Bold), XBrushes.Black, new XPoint(101, currentYaxis));
+                    gfx.DrawString("Total Booking Cost: Rs " + Math.Round(bookingPdfRequest.TotalCost,2).ToString(), new XFont("Verdana", 16, XFontStyle.Bold), XBrushes.Black, new XPoint(101, currentYaxis));
+                    if (bookingPdfRequest.IsCancelled)
+                    {
+                        gfx.DrawString("Warning: This ticket is cancelled and stands inactive", new XFont("Verdana", 24, XFontStyle.Underline), XBrushes.Red, new XPoint(101, currentYaxis + 50));
+                    }
                 }
 
                 gfx.DrawString("For any queries please call our toll free number 9876543210", new XFont("Verdana", 14, XFontStyle.Underline), XBrushes.Black, new XPoint(101, 1000));
                 gfx.DrawString("You can also email to us at support@flightmanagement.com", new XFont("Verdana", 14, XFontStyle.Underline), XBrushes.Black, new XPoint(101, 1030));
                 gfx.DrawString("Please provide your feedback on the service at feedback@flightmanagement.com", new XFont("Verdana", 14, XFontStyle.Underline), XBrushes.Black, new XPoint(101, 1060));
-                
+
                 //document.Save("D:\\DummyPdf.pdf");
                 document.Save(ms);
                 pdfUrl = UploadPdf(ms.ToArray(), "Booking_" + bookingPdfRequest.PnrNumber);

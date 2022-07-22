@@ -1,0 +1,16 @@
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\IAS4.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\IAS4.deps.json
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\IAS4.runtimeconfig.json
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\IAS4.pdb
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\IdentityModel.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\IdentityServer4.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\IdentityServer4.Storage.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\Serilog.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\Serilog.AspNetCore.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\Serilog.Extensions.Logging.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\Serilog.Sinks.Console.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\Serilog.Sinks.File.dll
+C:\Users\cogdotnet929\source\repos\Git Commit Dot Net IAS4\Flight_Management_Airline_rabbit\IAS4\obj\Release\netcoreapp2.1\PubTmp\Out\System.IdentityModel.Tokens.Jwt.dll

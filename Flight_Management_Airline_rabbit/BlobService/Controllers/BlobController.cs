@@ -1,5 +1,6 @@
 ﻿using BlobService.Interface;
 using BlobService.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -13,6 +14,7 @@ namespace BlobService.Controllers
     [ApiVersion("1.0")]
     [Route("api/{v:apiVersion}/flight/blob")]
     [ApiController]
+    [Authorize]
     public class BlobController : ControllerBase
     {
         private readonly IBlobService _blobService;

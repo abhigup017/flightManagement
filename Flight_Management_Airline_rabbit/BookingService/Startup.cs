@@ -3,6 +3,7 @@ using BookingService.Interfaces;
 using BookingService.Models;
 using BookingService.Services;
 using Common;
+using IdentityServer4.AccessTokenValidation;
 using MassTransit;
 using MassTransit.KafkaIntegration;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -58,24 +59,13 @@ namespace BookingService
                 }));
             });
             services.AddMassTransitHostedService();
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            }).AddJwtBearer(o => {
-                var key = Encoding.UTF8.GetBytes(Configuration["JWT:Key"]);
-                o.SaveToken = true;
-                o.TokenValidationParameters = new TokenValidationParameters
+            services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                .AddIdentityServerAuthentication(x =>
                 {
-                    ValidateAudience = false,
-                    ValidateIssuer = false,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = Configuration["JWT:Issuer"],
-                    ValidAudience = Configuration["JWT:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(key)
-                };
-            });
+                    x.Authority = "http://localhost:5000";
+                    x.RequireHttpsMetadata = false;
+                    x.ApiName = "BookingService";
+                });
             services.AddApiVersioning(x =>
             {
                 x.DefaultApiVersion = new ApiVersion(1, 0);

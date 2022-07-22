@@ -15,7 +15,7 @@ namespace AirlineService.Controllers
     [ApiVersion("1.0")]
     [Route("api/{v:apiVersion}/flight/airline")]
     [ApiController]
-    [Authorize]//[Authorize(Roles = "1")]//1 = Admin, 2 = User
+    [Authorize]
     public class AirlineController : ControllerBase
     {
         private readonly IAirlineManagementRepository _airlineManagementRepository;
